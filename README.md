@@ -73,6 +73,9 @@ To run the notebook, please add the keys at the beginning of the notebook:
 %env SERPER_API_KEY=...
 %env OPENAI_API_KEY=...
 ```
+Then download and inflate the dataset [data.zip](https://drive.google.com/file/d/15ActzX4-U_Jy_OSysOWa6H08P__L0qaA/view?usp=sharing), put it under ur root_dir (DON'T put under monkey_iterative and NEVER push it to github), and change the TOOL_QA_ROOT to your root_dir.
+
+
 To modify the iterative optimization loop, please edit the [new_optimizer](https://github.com/zsyJosh/Monkey_loop/blob/main/notebook/new_optimizer.py).
 
 

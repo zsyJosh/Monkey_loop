@@ -65,6 +65,17 @@ optimized_arxiv_agent = teleprompter.compile(
 
 For a detailed walkthrough, you can refer to the [notebook](https://github.com/stanfordnlp/dspy/blob/avatar-optimization-integration/examples/agents/avatar_langchain_tools.ipynb) in DSPy repo.
 
+### Efficiency/Cost estimation
+
+For the efficiency and cost estimation, please refer to [notebook](https://github.com/zsyJosh/Monkey_loop/blob/main/notebook/avatar_toolqa_scirex_hard_reference.ipynb) for an example on toolqa scirex hard dataset. The running scripts for other datasets are also provided at [notebooks](https://github.com/zsyJosh/Monkey_loop/tree/main/notebook).
+To run the notebook, please add the keys at the beginning of the notebook:
+```
+%env SERPER_API_KEY=...
+%env OPENAI_API_KEY=...
+```
+To modify the iterative optimization loop, please edit the [new_optimizer](https://github.com/zsyJosh/Monkey_loop/blob/main/notebook/new_optimizer.py).
+
+
 ## 2. (To reproduce the results) Run AvaTaR on STaRK and Flickr-30kEntities
 ### Installation
 

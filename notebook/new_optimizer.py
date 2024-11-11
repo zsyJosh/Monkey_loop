@@ -306,6 +306,33 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         else:
             return avg_metric
 
+    def thread_safe_evaluator_batch(self, devset, actor, batch_num, return_outputs=False, num_threads=60):
+        total_examples = len(devset)
+        results = []
+        max_score = 0
+        for batch_idx in range(batch_num):
+            print(f"Processing batch {batch_idx + 1} of {batch_num}...", end="\n")
+            total_score = 0
+            with ThreadPoolExecutor(max_workers=num_threads) as executor:
+                futures = [executor.submit(self.process_example, actor, example, return_outputs) for example in devset]
+                
+                for future in tqdm(futures, total=total_examples, desc="Processing examples"):
+                    result = future.result()
+                    if return_outputs:
+                        example, prediction, score = result
+                        total_score += score
+                        results.append((example, prediction, score))
+                    else:
+                        total_score += result
+        
+            avg_metric = total_score / total_examples
+            if(max_score < avg_metric):
+                max_score = avg_metric
+        
+        if return_outputs:
+            return max_score, results
+        else:
+            return max_score
 
     def _get_pos_neg_results(
         self, 

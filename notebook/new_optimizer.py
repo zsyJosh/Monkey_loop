@@ -108,7 +108,8 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             'total_tokens_out': 0,
             'total_execution_time': 0,
             'comparator_calls': 0,
-            'feedback_calls': 0
+            'feedback_calls': 0,
+            'evaluation_time': 0
         }
         self.tokenizer = tiktoken.encoding_for_model("gpt-4")
 
@@ -158,6 +159,8 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             'final_score': 0,
             'total_execution_time': 0
         }
+
+        compile_start_time = time.time()  # Track overall compilation time
         
         for i in range(self.max_iters):
             iteration_start = time.time()
@@ -202,12 +205,13 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             feedback_metrics = self._track_call_metrics(
                 'feedback', str(feedback_input), new_instruction, feedback_time
             )
+            iteration_time = time.time() - iteration_start
+            self.optimization_metrics['total_execution_time'] = time.time() - compile_start_time
 
-            # Track iteration details
             iteration_metrics = {
                 'iteration': i,
                 'score': score,
-                'execution_time': time.time() - iteration_start,
+                'total_iteration_time': iteration_time,
                 'comparator_metrics': comparator_metrics,
                 'feedback_metrics': feedback_metrics,
                 'instruction': new_instruction
@@ -221,6 +225,7 @@ class AvatarOptimizerWithMetrics(Teleprompter):
                 best_actor.actor.signature = best_actor.actor.signature.with_instructions(new_instruction)
                 best_actor.actor_clone = deepcopy(best_actor.actor)
                 best_score = score
+
 
         # Calculate final metrics
         compilation_metrics['total_cost'] = (self.optimization_metrics['total_tokens_in'] * 0.03 + 
@@ -239,12 +244,13 @@ class AvatarOptimizerWithMetrics(Teleprompter):
     def _print_optimization_report(self):
         """Print a detailed report of the optimization process costs"""
         total_cost = (self.optimization_metrics['total_tokens_in'] * 0.03 + 
-                     self.optimization_metrics['total_tokens_out'] * 0.06) / 1000  # GPT-4 pricing
-        
+                     self.optimization_metrics['total_tokens_out'] * 0.06) / 1000
+
         report = f"""
                 Optimization Process Metrics
                 ==========================
                 Total Execution Time: {self.optimization_metrics['total_execution_time']:.2f} seconds
+                Evaluation Time: {self.optimization_metrics['evaluation_time']:.2f} seconds
                 Total API Calls: {self.optimization_metrics['comparator_calls'] + self.optimization_metrics['feedback_calls']}
                 - Comparator calls: {self.optimization_metrics['comparator_calls']}
                 - Feedback instruction calls: {self.optimization_metrics['feedback_calls']}
@@ -287,6 +293,8 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         total_examples = len(devset)
         results = []
 
+        eval_start_time = time.time()
+
         with ThreadPoolExecutor(max_workers=num_threads) as executor:
             futures = [executor.submit(self.process_example, actor, example, return_outputs) for example in devset]
             
@@ -299,6 +307,10 @@ class AvatarOptimizerWithMetrics(Teleprompter):
                 else:
                     total_score += result
         
+        eval_time = time.time() - eval_start_time
+        self.optimization_metrics['evaluation_time'] += eval_time
+        self.optimization_metrics['total_execution_time'] += eval_time
+        
         avg_metric = total_score / total_examples
         
         if return_outputs:
@@ -310,6 +322,9 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         total_examples = len(devset)
         results = []
         max_score = 0
+
+        eval_start_time = time.time()
+        
         for batch_idx in range(batch_num):
             print(f"Processing batch {batch_idx + 1} of {batch_num}...", end="\n")
             total_score = 0
@@ -328,6 +343,10 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             avg_metric = total_score / total_examples
             if(max_score < avg_metric):
                 max_score = avg_metric
+        
+        eval_time = time.time() - eval_start_time
+        self.optimization_metrics['evaluation_time'] += eval_time
+        self.optimization_metrics['total_execution_time'] += eval_time
         
         if return_outputs:
             return max_score, results

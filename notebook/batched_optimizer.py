@@ -108,7 +108,8 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             'total_tokens_out': 0,
             'total_execution_time': 0,
             'comparator_calls': 0,
-            'feedback_calls': 0
+            'feedback_calls': 0,
+            'evaluation_time': 0  # Added evaluation time tracking
         }
         self.tokenizer = tiktoken.encoding_for_model("gpt-4")
 
@@ -310,11 +311,29 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         total_examples = len(devset)
         results = []
         max_score = 0
+        
+        # Initialize batch metrics
+        batch_metrics = {
+            'batches': [],
+            'total_execution_time': 0,
+            'total_tokens_in': 0,
+            'total_tokens_out': 0,
+            'best_batch': None,
+            'total_cost': 0
+        }
+
+        eval_start_time = time.time()
+        
         for batch_idx in range(batch_num):
-            print(f"Processing batch {batch_idx + 1} of {batch_num}...", end="\n")
+            batch_start_time = time.time()
+            print(f"Processing batch {batch_idx + 1} of {batch_num}...")
             total_score = 0
+            batch_tokens_in = 0
+            batch_tokens_out = 0
+            
             with ThreadPoolExecutor(max_workers=num_threads) as executor:
-                futures = [executor.submit(self.process_example, actor, example, return_outputs) for example in devset]
+                futures = [executor.submit(self.process_example, actor, example, return_outputs) 
+                        for example in devset]
                 
                 for future in tqdm(futures, total=total_examples, desc="Processing examples"):
                     result = future.result()
@@ -322,17 +341,98 @@ class AvatarOptimizerWithMetrics(Teleprompter):
                         example, prediction, score = result
                         total_score += score
                         results.append((example, prediction, score))
+                        # Count tokens for prediction
+                        if prediction:
+                            batch_tokens_in += self._count_tokens(str(example))
+                            batch_tokens_out += self._count_tokens(str(prediction))
                     else:
                         total_score += result
-        
+            
             avg_metric = total_score / total_examples
-            if(max_score < avg_metric):
+            batch_time = time.time() - batch_start_time
+            batch_cost = (batch_tokens_in * 0.03 + batch_tokens_out * 0.06) / 1000
+
+            # Store batch metrics
+            batch_metrics['batches'].append({
+                'batch_id': batch_idx + 1,
+                'score': avg_metric,
+                'execution_time': batch_time,
+                'tokens_in': batch_tokens_in,
+                'tokens_out': batch_tokens_out,
+                'cost': batch_cost
+            })
+            
+            # Update totals
+            batch_metrics['total_execution_time'] += batch_time
+            batch_metrics['total_tokens_in'] += batch_tokens_in
+            batch_metrics['total_tokens_out'] += batch_tokens_out
+            batch_metrics['total_cost'] += batch_cost
+
+            if max_score < avg_metric:
                 max_score = avg_metric
+                batch_metrics['best_batch'] = batch_idx + 1
+        
+        eval_time = time.time() - eval_start_time
+        self.optimization_metrics['evaluation_time'] += eval_time
+        self.optimization_metrics['total_execution_time'] += eval_time
+        
+        batch_metrics['final_score'] = max_score
+        batch_metrics['average_batch_time'] = batch_metrics['total_execution_time'] / batch_num
+        
+        # Print detailed report
+        self._print_batch_evaluation_report(batch_metrics)
         
         if return_outputs:
-            return max_score, results
+            return max_score, results, batch_metrics
         else:
-            return max_score
+            return max_score, batch_metrics
+
+    def _print_batch_evaluation_report(self, metrics):
+        """Print a detailed report of the batch evaluation process"""
+        print("\nBatch Evaluation Metrics Report")
+        print("==============================")
+        print(f"Total Execution Time: {metrics['total_execution_time']:.2f} seconds")
+        print(f"Average Time per Batch: {metrics['average_batch_time']:.2f} seconds")
+        print(f"Best Score: {metrics['final_score']:.3f} (Batch {metrics['best_batch']})")
+        print(f"Total Tokens: {metrics['total_tokens_in'] + metrics['total_tokens_out']:,} "
+            f"({metrics['total_tokens_in']:,} in, {metrics['total_tokens_out']:,} out)")
+        print(f"Total Cost: ${metrics['total_cost']:.4f}")
+        
+        print("\nPer-Batch Performance:")
+        print("--------------------")
+        for batch in metrics['batches']:
+            print(f"\nBatch {batch['batch_id']}:")
+            print(f"  Score: {batch['score']:.3f}")
+            print(f"  Execution Time: {batch['execution_time']:.2f}s")
+            print(f"  Tokens: {batch['tokens_in'] + batch['tokens_out']:,} "
+                f"({batch['tokens_in']:,} in, {batch['tokens_out']:,} out)")
+            print(f"  Cost: ${batch['cost']:.4f}")
+
+    def _print_optimization_report(self):
+        """Print a detailed report of the optimization process costs"""
+        total_cost = (self.optimization_metrics['total_tokens_in'] * 0.03 + 
+                    self.optimization_metrics['total_tokens_out'] * 0.06) / 1000
+
+        report = f"""
+                Optimization Process Metrics
+                ==========================
+                Total Execution Time: {self.optimization_metrics['total_execution_time']:.2f} seconds
+                Evaluation Time: {self.optimization_metrics['evaluation_time']:.2f} seconds
+                Total API Calls: {self.optimization_metrics['comparator_calls'] + self.optimization_metrics['feedback_calls']}
+                - Comparator calls: {self.optimization_metrics['comparator_calls']}
+                - Feedback instruction calls: {self.optimization_metrics['feedback_calls']}
+
+                Token Usage:
+                ----------
+                Total Tokens: {self.optimization_metrics['total_tokens_in'] + self.optimization_metrics['total_tokens_out']:,}
+                - Input tokens: {self.optimization_metrics['total_tokens_in']:,}
+                - Output tokens: {self.optimization_metrics['total_tokens_out']:,}
+
+                Cost Analysis:
+                ------------
+                Estimated Total Cost: ${total_cost:.4f}
+                """
+        print(report)
 
     def _get_pos_neg_results(
         self, 

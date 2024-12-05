@@ -1,0 +1,771 @@
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The X-Transformer achieved the highest BLEU score of 46.63 on the WMT2014 English-German dataset for the Machine Translation task. | Weighted_Transformer__large_ => 0.0
+The method that achieves the highest PSNR score on the Set14 - 4x upscaling dataset for Image Super-Resolution is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The Frustum_PointNets method is evaluated on the KITTI dataset for the Object_Localization task. | KITTI_Cars_Hard => 0.5
+Processing examples:   2%|▎         | 1/40 [00:22<14:33, 22.39s/it]The ByteNet method is evaluated on the English-to-German WMT translation task for Machine Translation. | WMT2014_English-French => 0.0
+The Bi-LSTM trained on FCE method achieves the highest F0.5 score on the FCE dataset for the Grammatical Error Detection task, as indicated by the results in the paper by Masahiro Kaneko and Mamoru Komachi. | CoNLL-2014_A2 => 0.0
+The method that achieves the highest PCK score on the Leeds Sports Poses dataset for the Pose Estimation task is OmniPose with a PCK score of 99.5%. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task based on the available information. | IWSLT2015_German-English => 0.0
+The PFF method for Image Super-Resolution is evaluated on the RealSR dataset, which includes real-world low-resolution and high-resolution image pairs captured using different cameras. | Set14_-_4x_upscaling => 0.0
+The highest Score score on the Atari_2600_Road_Runner dataset for the Atari_Games task is achieved by the method GDI-H3 with a score of 999999. | Duel_noop => 0.0
+The DeepFM method achieves the highest Log_Loss score for Click-Through Rate Prediction on the datasets used in the experiments mentioned in the DeepFM paper, which include both benchmark data and commercial data. However, the specific dataset with the highest Log_Loss score is not explicitly mentioned in the provided results. | Criteo => 0.0
+The highest Validation_perplexity score on the Penn Treebank Word Level dataset for Language Modelling is achieved by OpenAI's GPT-3 with a word-level perplexity score of 20.5. | Tied_Variational_LSTM___augmented_loss => 0.0
+The highest F1 score for Semantic Role Labeling on the OntoNotes dataset is 87.0 F1, achieved by the span-based model presented by Hiroki Ouchi, Hiroyuki Shindo, and Yuji Matsumoto. | Li_et_al_ => 0.0
+The LISA method achieves the highest F1 score for the Predicate_Detection task on the COLX 563 dataset, with scores above 97 F1. | CoNLL_2005 => 0.0
+The method achieving the highest MRR score on the FB15k dataset for the Link Prediction task is AutoKGE with an MRR of 0.861. | TuckER => 0.0
+The Sample_Clustering method for Few-Shot Image Classification is evaluated on several benchmark datasets, including miniImageNet, tieredImageNet, CIFAR-FS, FC100, and CUB. | CUB-200_-_0-Shot_Learning => 0.5
+The Transformer method for the IWSLT2015 German-English dataset in the Machine Translation task is commonly evaluated using metrics such as BLEU, METEOR, and TER. These metrics assess the quality of translations by comparing them to human reference translations, focusing on aspects like n-gram overlap and translation edit rate. | BLEU_score => 0.5
+Processing examples:   5%|▌         | 2/40 [00:45<14:36, 23.06s/it]Processing examples:  18%|█▊        | 7/40 [00:49<02:46,  5.06s/it]Processing examples:  28%|██▊       | 11/40 [01:02<02:02,  4.21s/it]Processing examples:  38%|███▊      | 15/40 [01:06<01:10,  2.83s/it]Processing examples:  82%|████████▎ | 33/40 [01:10<00:06,  1.03it/s]Processing examples: 100%|██████████| 40/40 [01:10<00:00,  1.77s/it]
+The method that achieves the highest Medium_Human-Normalized_Score score on the Atari-57 dataset for the Atari_Games task is Agent57, developed by DeepMind. It is the first deep reinforcement learning agent to obtain a score above the human baseline on all 57 Atari 2600 games. | Ape-X => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset for the Curved_Text_Detection task using metrics such as F-measure, Precision, and Recall. | F-Measure => 0.5
+The DDQN__tuned__noop method is evaluated on 57 Atari games. | Atari_2600_Berzerk => 0.0
+The CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method is evaluated on the swb_hub_500_WER_fullSWBCH dataset using Word Error Rate (WER) as the primary metric for the Speech Recognition task. | Percentage_error => 1.0
+The Duel_noop method is evaluated on 57 Atari games for the Atari_Games task. | Atari_2600_Time_Pilot => 0.0
+The ResNet_ELU method is evaluated on the CIFAR-100 dataset using the metric of test error percentage. It achieved a test error of 24.28%, which is noted as the best published result on CIFAR-100 without using multi-view evaluation or model averaging. | Percentage_correct => 1.0
+The Duel_noop method is evaluated on 57 Atari games for the Atari_Games task. | Atari_2600_Ms__Pacman => 0.0
+The datasets on which the DDQN__tuned__hs method is evaluated for the Atari_Games task are not explicitly mentioned in the retrieved information. It seems that the specific datasets or games used for evaluation are not detailed in the available sources. | Atari_2600_Assault => 0.0
+CornerNet-Squeeze is evaluated on the COCO dataset for the Real-Time Object Detection task. | COCO => 1.0
+The highest AP_0_5 score on the PASCAL-Person-Part dataset for the Multi-Human Parsing task is achieved by the NAN method with a score of 59.70%. | NAN => 0.0
+The Duel_hs method evaluation datasets for the Atari_Games task were not explicitly found in the search results. It seems that the specific datasets used for evaluating the Duel_hs method on Atari_Games are not readily available in the provided resources. | Atari_2600_Video_Pinball => 0.0
+The MT-DNN method is evaluated on the MultiNLI dataset using accuracy as a primary metric for the Natural Language Inference task. | Matched, Mismatched => 0.5
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using two main metrics: Average Precision (AP) at 50% intersection-over-union (IoU) and CorLoc. AP measures the precision of detected boxes against ground truth, while CorLoc measures the percentage of images with at least one correctly localized instance of the target object class. | MAP => 0.5
+The TARNet method for causal inference is evaluated on the semi-synthetic IHDP dataset and the Jobs dataset, which includes both a randomized and a non-randomized component. | IDHP => 0.5
+The DANN method is evaluated on the Multi-Domain Sentiment Dataset using classification accuracy as the primary metric. The dataset includes Amazon reviews across four domains: books, DVDs, electronics, and kitchen appliances. The evaluation involves 12 domain adaptation tasks, and the DANN method is compared against a standard neural network and a Support Vector Machine. The results show that DANN has significantly better performance in terms of classification accuracy. | Average, Books, DVD, Electronics, Kitchen => 0.5
+The Mult-DAE method is evaluated on the Netflix dataset using the NDCG@100 metric for the Collaborative Filtering task. | Recall_20, Recall_50 => 0.0
+The IQN method is evaluated on the 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Kung-Fu_Master => 0.0
+The A3C-CTS method is evaluated on the Atari 2600 suite of games, which includes a variety of games used to assess exploration methods in reinforcement learning. Specific games mentioned include Montezuma's Revenge and other hard exploration games with sparse rewards. | Atari_2600_Venture => 0.5
+The LapSRN method is typically evaluated using image quality metrics such as PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index) on datasets like Urban100 for the 4x upscaling Image Super-Resolution task. However, specific metrics for LapSRN on Urban100 were not found in the search results. | PSNR => 0.5
+The IDE____CamStyle method is evaluated on the PRID2011, iLIDS-VID, and VIPeR datasets for the Person Re-Identification task. | DukeMTMC-reID => 0.0
+The BiDAF___Self_Attention__single_model_ method is evaluated on the SQuAD and CNN/DailyMail datasets for the Question Answering task. | SQuAD1_1 => 0.0
+The Subgraph_embeddings method for the Question_Answering task on the WebQuestions dataset is evaluated using a scoring function that learns to generate high scores for correct answers and low scores for incorrect ones. However, specific evaluation metrics such as precision, recall, or F1 score were not explicitly mentioned in the retrieved documents. | F1 => 0.0
+The MTGAE method evaluation metrics on the Pubmed dataset for the Link_Prediction task are not explicitly found in the available resources. It is recommended to refer to the original research paper or supplementary materials for detailed evaluation metrics. | Accuracy => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 71.33 seconds
+Total Tokens: 64,445 (1,090 in, 63,355 out)
+Total Cost: $0.6363
+Average Score: 0.200
+Average Score: 0.2
+Evaluation Cost: $0.6363
+Generated new instruction: I'm here to help you craft the new instruction based on the feedback provided. Here's a suggested version:
+
+---
+
+New Instruction: You will be given `Tools`, which is a list of resources to use in order to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. To enhance your performance, ensure that you select the most appropriate tool for each specific query. For instance, use ARXIV_SEARCH for queries related to specific academic papers and WEB_SEARCH for broader informational needs. Consider using multiple tools in sequence to gather comprehensive information, especially for complex queries. This approach will help you cross-verify and ensure the accuracy and completeness of the information gathered.
+
+Refine your input queries to be more specific and targeted. This can be achieved by using additional keywords or phrases that are likely to be present in the desired information. By doing so, you will improve the relevance of the results retrieved. Additionally, implement a feedback loop to learn from past queries. Analyze unsuccessful queries to understand what went wrong and how it can be corrected in future attempts. This continuous improvement process will enhance your ability to select the right tools and formulate effective queries.
+
+Finally, ensure that you cross-verify the information obtained by using multiple tools. Compare results from different sources to identify the most reliable information. This practice will help you provide a well-rounded and accurate response to the user query. Remember, you can opt to use no tools and provide the final answer directly if the information is already known or straightforward. You can also use one tool multiple times with different input queries if applicable. By following these guidelines, you will improve your performance on the task and achieve the desired outcomes more effectively.
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]The IQN method is evaluated on 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Kung-Fu_Master => 0.5
+The BiDAF Self Attention single model method is evaluated on the Stanford Question Answering Dataset (SQuAD). | SQuAD1_1 => 0.5
+The Bi-LSTM trained on FCE method achieves the highest F0.5 score for the Grammatical Error Detection task on the FCE dataset, as indicated by the multi-head multi-layer attention model outperforming the current state-of-the-art method by 6.0 points on FCE. | CoNLL-2014_A2 => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The method "PTSR: Patch Translator for Image Super-Resolution" achieves the highest PSNR score on the Set14 4x upscaling dataset for the Image Super-Resolution task, with an improvement of 21.66% in PSNR score compared to the best competitive models. | PFF => 0.0
+The MTGAE method is evaluated on the Pubmed dataset for the Link Prediction task using metrics such as Mean Rank (MR), Mean Reciprocal Rank (MRR), and Hits@k. | Accuracy => 0.0
+DeepFM achieves the highest Log_Loss score for Click-Through Rate Prediction on the Criteo dataset, outperforming other models in terms of Logloss by 5.60%. | Criteo => 1.0
+Processing examples:   2%|▎         | 1/40 [00:26<16:59, 26.15s/it]Processing examples:   5%|▌         | 2/40 [00:28<07:40, 12.12s/it]The method that achieves the highest score on the Atari 2600 Road Runner dataset for the Atari Games task is GDI-H3, with a score of 999999. | Duel_noop => 0.0
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset using the Peak Signal-to-Noise Ratio (PSNR) and the Structural Similarity Index (SSIM) as evaluation metrics. | PSNR => 0.5
+The Duel_hs method is evaluated on the Atari 2600 suite of games. | Atari_2600_Video_Pinball => 0.5
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task based on the available information. | IWSLT2015_German-English => 0.0
+OmniPose achieves the highest PCK score of 99.5% on the Leeds Sports Poses dataset for the Pose Estimation task. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The TARNet method for causal inference is evaluated on the semi-synthetic IHDP dataset and the Jobs dataset, which includes both randomized and non-randomized components. | IDHP => 0.5
+InteractE achieves the highest MRR score on the FB15k-237 dataset for the Link Prediction task. | TuckER => 0.0
+The highest BLEU score achieved on the WMT2014 English-German dataset for the Machine Translation task is 28.4, achieved by the Transformer Big model (Vaswani et al., 2017). | Weighted_Transformer__large_ => 0.0
+The highest AP_0_5 score method for the PASCAL-Person-Part dataset in the Multi-Human Parsing task is not explicitly found in the available resources. Further specific research or access to recent publications may be required to obtain this information. | NAN => 1.0
+Goal: You will be given a question. Your task is to answer the question with a short response.
+
+Tools:
+[1] «RETRIEVE»
+[2] «WEB_SEARCH»
+[3] «ARXIV_SEARCH»
+[4] «Finish»
+
+Question: Which datasets is ByteNet method evaluated on for Machine_Translation task?
+
+Action 1: {"tool_name":"ARXIV_SEARCH","tool_input_query":"ByteNet method evaluated datasets Machine Translation"}
+
+Result 1:
+Published: 2017-03-15
+Title: Neural Machine Translation in Linear Time
+Authors: Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, Koray Kavukcuoglu
+Summary: The ByteNet achieves state-of-the-art performance on character-to-character machine translation on the English-to-German WMT translation task, surpassing comparable neural translation models that are based on recurrent networks with attentional pooling and run in quadratic time.
+
+Action 2: {"tool_name":"Finish","tool_input_query":""}
+
+Result 2: Gathered all information needed to finish the task.
+
+Answer: The ByteNet method is evaluated on the English-to-German WMT translation task for machine translation. | WMT2014_English-French => 0.0
+The LISA method achieves the highest F1 score for the Predicate_Detection task on the CoNLL-2005 dataset. | CoNLL_2005 => 1.0
+The A3C-CTS method is evaluated on the Atari 2600 suite of games, which includes a variety of games such as Montezuma's Revenge and others within the Arcade Learning Environment (ALE). | Atari_2600_Venture => 0.5
+The Duel_noop method evaluation datasets for Atari Games were not explicitly found in the search results. Further specific information might be required from the original research papers or datasets related to Duel_noop. | Atari_2600_Time_Pilot => 0.0
+The specific evaluation metrics for the ResNet_ELU method on the CIFAR-100 dataset for the Image Classification task were not found in the available resources. | Percentage_correct => 0.0
+The method achieving the highest validation perplexity score on the Penn Treebank Word Level dataset for language modeling is the Past Decode Regularization (PDR) method, which achieves a word level perplexity of 53.8. | Tied_Variational_LSTM___augmented_loss => 0.0
+The CornerNet-Squeeze method is evaluated on the PASCAL VOC and MS COCO datasets for the Real-Time Object Detection task. | COCO => 0.5
+The Transformer method for the IWSLT2015 German-English Machine Translation task is typically evaluated using metrics such as BLEU, METEOR, and NIST. These are common evaluation metrics for machine translation systems. | BLEU_score => 0.5
+The Sample_Clustering method evaluation datasets for Few-Shot Image Classification were not found in the available resources. Further specific information might be required to locate the datasets used for this method. | CUB-200_-_0-Shot_Learning => 0.0
+The highest F1 score for Semantic Role Labeling on the OntoNotes dataset is 87.0, achieved by a span-based model as reported in the paper "A Span Selection Model for Semantic Role Labeling" by Hiroki Ouchi, Hiroyuki Shindo, and Yuji Matsumoto. | Li_et_al_ => 0.0
+The DANN method evaluation metrics on the Multi-Domain Sentiment Dataset for the Sentiment Analysis task are not explicitly found in the current search results. Further specific research or access to the original paper detailing the DANN method might be required to obtain this information. | Average, Books, DVD, Electronics, Kitchen => 0.0
+The CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method is evaluated using the Word Error Rate (WER) metric on the swb_hub_500_WER_fullSWBCH dataset for the Speech Recognition task. | Percentage_error => 1.0
+The MT-DNN method is evaluated on the MultiNLI dataset using classification accuracy as the evaluation metric for the Natural Language Inference task. | Matched, Mismatched => 0.0
+The Duel_noop method is evaluated on 57 Atari games, using both human and noop start settings, as part of the Arcade Learning Environment (ALE). | Atari_2600_Ms__Pacman => 0.0
+The DDQN__tuned__hs method evaluation datasets for the Atari_Games task were not explicitly found in the retrieved results. The search did not yield specific datasets for this method. It might be beneficial to consult the original research paper or related documentation for precise information. | Atari_2600_Assault => 0.0
+Goal:
+You will be given a question. Your task is to answer the question with a short response.
+
+Tools:
+[1] «RETRIEVE»
+[2] «WEB_SEARCH»
+[3] «ARXIV_SEARCH»
+[4] «Finish»
+
+Question: Which datasets is Frustum_PointNets method evaluated on for Object_Localization task?
+
+Action 1: {"tool_name":"ARXIV_SEARCH","tool_input_query":"Frustum_PointNets Object Localization datasets evaluation"}
+
+Result 1:
+The search did not yield relevant results specifically mentioning the datasets used for evaluating Frustum_PointNets.
+
+Action 2: {"tool_name":"WEB_SEARCH","tool_input_query":"Frustum_PointNets datasets evaluation Object Localization"}
+
+Result 2:
+Frustum PointNets is evaluated on the KITTI and SUN RGB-D 3D detection benchmarks. The method outperforms the state of the art by remarkable margins while having real-time capability.
+
+Action 3: {"tool_name":"Finish","tool_input_query":""}
+
+Result 3: Gathered all information needed to finish the task.
+
+Answer: Frustum_PointNets is evaluated on the KITTI and SUN RGB-D datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+Processing examples:  10%|█         | 4/40 [00:47<06:13, 10.37s/it]Processing examples: 100%|██████████| 40/40 [00:47<00:00,  1.18s/it]
+Goal: You will be given a question. Your task is to answer the question with a short response.
+
+Tools:
+[1] «RETRIEVE»
+[2] «WEB_SEARCH»
+[3] «ARXIV_SEARCH»
+[4] «Finish»
+
+Question: Which datasets is IDE____CamStyle method evaluated on for Person_Re-Identification task?
+
+Action 1: {"tool_name":"WEB_SEARCH","tool_input_query":"IDE_CamStyle method datasets Person Re-Identification"}
+
+Result 1: The search results provided information about the CamStyle method for person re-identification but did not specify the datasets used for evaluation.
+
+Action 2: {"tool_name":"ARXIV_SEARCH","tool_input_query":"IDE_CamStyle method datasets Person Re-Identification"}
+
+Result 2: The search results included surveys and papers on person re-identification but did not mention the specific datasets used for evaluating the IDE_CamStyle method.
+
+Action 3: {"tool_name":"WEB_SEARCH","tool_input_query":"IDE_CamStyle method evaluated datasets Person Re-Identification"}
+
+Result 3: The search results indicated that the IDE_CamStyle method is evaluated on the Market-1501 and MSMT17 datasets.
+
+Action 4: {"tool_name":"Finish","tool_input_query":"The IDE_CamStyle method for Person Re-Identification is evaluated on the Market-1501 and MSMT17 datasets."}
+
+Result 4: Gathered all information needed to finish the task.
+
+Answer: The IDE_CamStyle method for Person Re-Identification is evaluated on the Market-1501 and MSMT17 datasets. | DukeMTMC-reID => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset for the Curved_Text_Detection task using metrics such as Precision, Recall, and F-measure. | F-Measure => 0.5
+The Subgraph_embeddings method evaluation metrics on the WebQuestions dataset for the Question Answering task are not explicitly found in the search results. It might be evaluated using common QA metrics like F1 score, precision, recall, or accuracy, but specific metrics for this method were not retrieved. | F1 => 0.0
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using the metrics Mean Average Precision (mAP) and Correct Localization (CorLoc). | MAP => 0.5
+The PFF method for Image Super-Resolution is evaluated on three public datasets, as indicated in the research paper titled "Progressive Multi-scale Consistent Network for Multi-class Fundus Lesion Segmentation." | Set14_-_4x_upscaling => 0.0
+The Mult-DAE method is typically evaluated using metrics such as Mean Absolute Error (MAE) and Normalized Discounted Cumulative Gain (NDCG) on datasets like Netflix for collaborative filtering tasks. These metrics help assess the accuracy and relevance of the recommendations generated by the model. | Recall_20, Recall_50 => 0.0
+The method that achieves the highest Medium_Human-Normalized_Score on the Atari-57 dataset for the Atari_Games task is GDI-H3, with a score of 9620.33%. | Ape-X => 0.0
+The DDQN__tuned__noop method evaluation datasets for Atari_Games could not be found in the available resources. Further specific resources or access to the original research paper might be required to obtain this information. | Atari_2600_Berzerk => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 47.51 seconds
+Total Tokens: 84,270 (1,090 in, 83,180 out)
+Total Cost: $0.8345
+Average Score: 0.237
+Average Score: 0.2375
+Evaluation Cost: $0.8345
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use in order to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. To enhance your performance, ensure that you select the most appropriate tool for each specific query. For instance, use ARXIV_SEARCH for queries related to specific academic papers and WEB_SEARCH for broader informational needs. Consider using multiple tools in sequence to gather comprehensive information, especially for complex queries. This approach will help you cross-verify and ensure the accuracy and completeness of the information gathered.
+
+To improve the performance on negative inputs, focus on refining your input queries to be more specific and targeted. Incorporate additional keywords or phrases that are likely to be present in the desired information, such as the dataset name, task, and evaluation metric. This will enhance the relevance of the results retrieved. Additionally, implement a feedback loop to learn from past queries. Analyze unsuccessful queries to understand what went wrong and how it can be corrected in future attempts. This continuous improvement process will enhance your ability to select the right tools and formulate effective queries.
+
+Finally, ensure that you cross-verify the information obtained by using multiple tools. Compare results from different sources to identify the most reliable information. This practice will help you provide a well-rounded and accurate response to the user query. Remember, you can opt to use no tools and provide the final answer directly if the information is already known or straightforward. You can also use one tool multiple times with different input queries if applicable. By following these guidelines, you will improve your performance on the task and achieve the desired outcomes more effectively.
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]Processing examples:   2%|▎         | 1/40 [00:05<03:20,  5.13s/it]OmniPose achieves the highest PCK score of 99.5% on the Leeds Sports Poses dataset for the Pose Estimation task. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The ByteNet method is evaluated on the English-to-German WMT translation task for the Machine Translation task. | WMT2014_English-French => 0.0
+The BiDAF___Self_Attention__single_model method is evaluated on the Stanford Question Answering Dataset (SQuAD) for the Question Answering task. | SQuAD1_1 => 0.5
+The IQN method is evaluated on the 57 Atari 2600 games in the ALE (Arcade Learning Environment) for the Atari Games task. | Atari_2600_Kung-Fu_Master => 0.5
+Frustum_PointNets is evaluated on the KITTI and SUN RGB-D datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+The method that achieves the highest PSNR score on the Set14 - 4x upscaling dataset for the Image Super-Resolution task is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The method that achieves the highest F1 score on the OntoNotes dataset for the Semantic Role Labeling task is HeSyFu with an F1 score of 88.59. | Li_et_al_ => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The method that achieves the highest score on the Atari 2600 Road Runner dataset for the Atari Games task is GDI-H3. | Duel_noop => 0.0
+The highest validation perplexity score on the Penn Treebank Word Level dataset for language modeling is achieved by OpenAI's GPT-3 with a score of 20.5. | Tied_Variational_LSTM___augmented_loss => 0.0
+Processing examples:   5%|▌         | 2/40 [01:24<30:49, 48.67s/it]Processing examples:  15%|█▌        | 6/40 [01:29<06:53, 12.17s/it]Processing examples:  18%|█▊        | 7/40 [01:52<07:59, 14.53s/it]Processing examples: 100%|██████████| 40/40 [01:52<00:00,  2.82s/it]
+TARNet method is evaluated on datasets such as IHDP and Jobs for the Causal Inference task. | IDHP => 0.5
+The IDE_CamStyle method is evaluated on the Market-1501 and DukeMTMC-reID datasets for the Person Re-Identification task. | DukeMTMC-reID => 0.5
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset for the Image Super-Resolution task using evaluation metrics such as PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index). | PSNR => 0.5
+AutoKGE achieves the highest MRR score of 0.861 on the FB15k dataset for the Link Prediction task. | TuckER => 0.0
+CornerNet-Squeeze is evaluated on the PASCAL VOC and MS COCO datasets for the Real-Time Object Detection task. | COCO => 0.0
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task. The available information primarily discusses its application in generalized category discovery and visual recognition tasks. | IWSLT2015_German-English => 0.0
+The highest BLEU score achieved on the WMT2014 English-German dataset for the Machine Translation task is 28.4, accomplished by the Transformer Big model as reported by Vaswani et al., 2017. | Weighted_Transformer__large_ => 0.0
+The MT-DNN method is evaluated on the MultiNLI dataset using classification accuracy as the evaluation metric for the Natural Language Inference task. | Matched, Mismatched => 0.0
+The Transformer method is typically evaluated on the IWSLT2015 German-English dataset for the Machine Translation task using common metrics such as BLEU, METEOR, and NIST. | BLEU_score => 0.5
+The LISA method achieves the highest F1 score for the Predicate_Detection task on the CoNLL-2005 dataset. | CoNLL_2005 => 1.0
+The CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method is evaluated using Word Error Rate (WER) and Character Error Rate (CER) on the swb_hub_500_WER_fullSWBCH dataset for the Speech Recognition task. | Percentage_error => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset for the Curved Text Detection task using metrics such as Precision, Recall, and F-measure. | F-Measure => 0.5
+The Bi-LSTM trained on the FCE dataset achieves the highest F0.5 score of 53.49 on the FCE test set for the Grammatical Error Detection task. | CoNLL-2014_A2 => 0.0
+The information about the dataset on which DeepFM achieves the highest Log_Loss score for Click-Through Rate Prediction is not available from the current search results. | Criteo => 0.0
+The method that achieves the highest Medium_Human-Normalized_Score on the Atari-57 dataset for the Atari_Games task is LBC (Learnable Behavior Control) with a score of 10077.52%. | Ape-X => 0.0
+The Subgraph_embeddings method is evaluated on the WebQuestions dataset for the Question Answering task primarily using the F1-score as the evaluation metric. | F1 => 1.0
+The Mult-DAE method for the Collaborative Filtering task on the Netflix dataset is typically evaluated using metrics such as RMSE (Root Mean Squared Error), MAE (Mean Absolute Error), Recall@K, and NDCG@K (Normalized Discounted Cumulative Gain at K). These metrics help in assessing the accuracy and ranking performance of the recommendation system. | Recall_20, Recall_50 => 0.5
+The Duel_hs method's evaluation datasets for the Atari Games task were not specifically identified in the search results. The searches did not yield direct information about the specific datasets or benchmarks used for evaluating the Duel_hs method on Atari Games. | Atari_2600_Video_Pinball => 0.0
+The method achieving the highest AP_0_5 score on the PASCAL-Person-Part dataset for the Multi-Human Parsing task is not explicitly found in the available data. However, the NAN method achieves a high score of 59.70% on a related metric. Further specific details on AP_0_5 scores might require more targeted searches or access to specific research papers or datasets. | NAN => 1.0
+The information about the datasets on which the Sample_Clustering method is evaluated for the Few-Shot Image Classification task is not available from the current search results. | CUB-200_-_0-Shot_Learning => 0.0
+The DDQN__tuned__noop method is evaluated on the Atari 2600 games, which are part of the Arcade Learning Environment (ALE). However, specific datasets or a comprehensive list of games evaluated with this method were not found in the search results. | Atari_2600_Berzerk => 0.0
+The evaluation metrics for the ResNet_ELU method on the CIFAR-100 dataset for the Image Classification task are not readily available from the searched sources. It is possible that specific details about ResNet_ELU's evaluation metrics on CIFAR-100 are not widely documented or published in accessible sources. Further investigation into specific research papers or direct experimentation might be necessary to obtain this information. | Percentage_correct => 0.0
+The MTGAE method is evaluated on the Pubmed dataset for the Link Prediction task using the Mean Reciprocal Rank (MRR) and Hits@k metrics. | Accuracy => 0.0
+The Duel_noop method is evaluated on the Atari 2600 Games task, which involves training an agent to achieve high game scores. However, specific datasets for the Duel_noop method evaluation were not identified in the search results. The Atari-5 dataset is mentioned in the context of evaluating algorithms on Atari games, but it is unclear if Duel_noop specifically uses this dataset. | Atari_2600_Ms__Pacman => 0.0
+The A3C-CTS method is evaluated on various Atari 2600 games, but specific datasets or a comprehensive list of games evaluated were not found in the search results. The Arcade Learning Environment (ALE) is commonly used for such evaluations. | Atari_2600_Venture => 0.5
+The Duel_noop method is evaluated on the Atari 2600 games, but specific datasets used for its evaluation were not found in the search results. | Atari_2600_Time_Pilot => 0.0
+The datasets on which the PFF method is evaluated for the Image Super-Resolution task could not be determined from the available resources. | Set14_-_4x_upscaling => 0.0
+The OICR-Ens___FRCNN method for Weakly Supervised Object Detection on the PASCAL VOC 2012 dataset is evaluated using the metrics mean Average Precision (mAP) and Correct Localization (CorLoc). | MAP => 0.5
+The DDQN__tuned__hs method is evaluated on a variety of Atari 2600 games, but specific datasets or a comprehensive list of games evaluated with this method were not found in the search results. The Atari 2600 games task typically involves training agents on a wide range of games to test their performance, but the exact datasets for DDQN__tuned__hs were not specified in the available information. | Atari_2600_Assault => 0.0
+The DANN method evaluation metrics on the Multi-Domain Sentiment Dataset for the Sentiment Analysis task are not readily available from the current search results. It is recommended to refer to the original research paper or related academic sources for detailed information on the evaluation metrics used for DANN in this context. | Average, Books, DVD, Electronics, Kitchen => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 113.04 seconds
+Total Tokens: 159,255 (1,090 in, 158,165 out)
+Total Cost: $1.5844
+Average Score: 0.212
+Average Score: 0.2125
+Evaluation Cost: $1.5844
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use in order to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. To enhance your performance, ensure that you select the most appropriate tool for each specific query. For instance, use ARXIV_SEARCH for queries related to specific academic papers and WEB_SEARCH for broader informational needs. Consider using multiple tools in sequence to gather comprehensive information, especially for complex queries. This approach will help you cross-verify and ensure the accuracy and completeness of the information gathered.
+
+To improve performance on negative inputs, focus on refining your input queries to be more specific and targeted. Incorporate additional keywords or phrases that are likely to be present in the desired information, such as the dataset name, task, and evaluation metric. For example, instead of a general query like "highest score method Atari Games," specify the dataset and metric, such as "highest Medium_Human-Normalized_Score on Atari-57 dataset for Atari_Games." This will enhance the relevance of the results retrieved. Additionally, implement a feedback loop to learn from past queries. Analyze unsuccessful queries to understand what went wrong and how it can be corrected in future attempts. This continuous improvement process will enhance your ability to select the right tools and formulate effective queries.
+
+Finally, ensure that you cross-verify the information obtained by using multiple tools. Compare results from different sources to identify the most reliable information. This practice will help you provide a well-rounded and accurate response to the user query. Remember, you can opt to use no tools and provide the final answer directly if the information is already known or straightforward. You can also use one tool multiple times with different input queries if applicable. If the initial query does not yield satisfactory results, refine and iterate the query with different keywords or phrases. By following these guidelines, you will improve your performance on the task and achieve the desired outcomes more effectively.
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]Processing examples:   2%|▎         | 1/40 [00:00<00:17,  2.27it/s]OmniPose achieves the highest PCK score of 99.5% on the Leeds Sports Poses dataset for the Pose Estimation task. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The ByteNet method is evaluated on the English-to-German WMT translation task for the Machine Translation task. | WMT2014_English-French => 0.0
+The IQN method is evaluated on the 57 Atari 2600 games in the ALE (Arcade Learning Environment) for the Atari Games task. | Atari_2600_Kung-Fu_Master => 0.5
+The method that achieves the highest F1 score on the OntoNotes dataset for the Semantic Role Labeling task is HeSyFu with an F1 score of 88.59. | Li_et_al_ => 0.0
+The BiDAF with Self-Attention single model is evaluated on the Stanford Question Answering Dataset (SQuAD) and TriviaQA for the Question Answering task. | SQuAD1_1 => 0.0
+The method that achieves the highest PSNR score on the Set14 - 4x upscaling dataset for the Image Super-Resolution task is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The highest BLEU score achieved on the WMT2014 English-German dataset for the Machine Translation task is 28.4, accomplished by the Transformer Big model as reported by Vaswani et al., 2017. | Weighted_Transformer__large_ => 0.0
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task. The available information primarily discusses its application in generalized category discovery and visual recognition tasks. | IWSLT2015_German-English => 0.0
+The Frustum_PointNets method is evaluated on the KITTI and SUN RGB-D datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+The method achieving the highest validation perplexity score on the Penn Treebank Word Level dataset for language modeling is OpenAI's GPT-3, which reportedly scored a word-level perplexity score of 20.5. | Tied_Variational_LSTM___augmented_loss => 0.0
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset using PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index) metrics for the Image Super-Resolution task. | PSNR => 0.5
+AutoKGE achieves the highest MRR score of 0.861 on the FB15k dataset for the Link Prediction task. | TuckER => 0.0
+The Transformer method is typically evaluated on the IWSLT2015 German-English dataset for the Machine Translation task using metrics such as BLEU, METEOR, and NIST. These are standard evaluation metrics for machine translation systems. | BLEU_score => 0.5
+CornerNet-Squeeze is evaluated on the PASCAL VOC and MS COCO datasets for the Real-Time Object Detection task. | COCO => 0.0
+The method that achieves the highest score on the Atari 2600 Road Runner dataset for the Atari Games task is GDI-H3. | Duel_noop => 0.0
+The MT-DNN method is evaluated on the MultiNLI dataset using classification accuracy as the evaluation metric for the Natural Language Inference task. | Matched, Mismatched => 0.0
+Processing examples:   5%|▌         | 2/40 [01:01<22:45, 35.94s/it]Processing examples:  10%|█         | 4/40 [01:34<14:14, 23.74s/it]Processing examples:  18%|█▊        | 7/40 [29:57<3:04:33, 335.55s/it]Processing examples: 100%|██████████| 40/40 [29:57<00:00, 44.93s/it]  
+The TARNet method is evaluated on datasets such as IHDP and Jobs for Causal Inference tasks. | IDHP => 0.5
+The IDE_CamStyle method for Person Re-Identification is evaluated on the Market-1501 and DukeMTMC-reID datasets. | DukeMTMC-reID => 0.5
+The specific evaluation metrics for the CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method on the swb_hub_500_WER_fullSWBCH dataset for the Speech_Recognition task could not be found in the available resources. | Percentage_error => 0.0
+The method achieving the highest AP_0_5 score on the PASCAL-Person-Part dataset for the Multi-Human Parsing task is NAN with a score of 59.70%. | NAN => 0.5
+The method that achieves the highest Medium_Human-Normalized_Score on the Atari-57 dataset for the Atari_Games task is LBC with a score of 10077.52%. | Ape-X => 0.0
+The Subgraph_embeddings method is evaluated using the F1 score as the main evaluation metric on the WebQuestions dataset for the Question Answering task. | F1 => 1.0
+The Bi-LSTM trained on the FCE dataset achieves the highest F0.5 score of 53.49 on the FCE test set for the Grammatical Error Detection task. | CoNLL-2014_A2 => 0.0
+The LISA method achieves the highest F1 score for the Predicate_Detection task on the CoNLL-2005 SRL dataset. | CoNLL_2005 => 1.0
+The ResNet_ELU method is evaluated on the CIFAR-100 dataset for the Image Classification task using the test error metric. The ELU networks achieved a test error of 24.28%, which is noted as one of the best published results on CIFAR-100 without using multi-view evaluation or model averaging. | Percentage_correct => 1.0
+The DeepFM method achieves the highest Log_Loss score for the Click-Through Rate Prediction task on the Criteo dataset. | Criteo => 1.0
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using the mean Average Precision (mAP) metric. | MAP => 1.0
+I was unable to find specific information on the datasets used to evaluate the Duel_hs method for the Atari Games task. | Atari_2600_Video_Pinball => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset for the Curved Text Detection task using metrics such as Precision, Recall, and F-measure. | F-Measure => 0.5
+The A3C-CTS method is evaluated on the Atari 2600 games using the Arcade Learning Environment (ALE) framework. This includes a variety of games, but specific datasets or a comprehensive list of games evaluated with A3C-CTS were not found in the search results. The method typically involves training on multiple Atari games to assess performance across different environments. | Atari_2600_Venture => 0.0
+The Duel_noop method is evaluated on the Atari 2600 Games task, but specific datasets or games for evaluation were not identified in the search results. | Atari_2600_Time_Pilot => 0.0
+The specific datasets used for evaluating the PFF method in Image Super-Resolution are not found in the available resources. | Set14_-_4x_upscaling => 0.0
+The DANN method evaluation metrics on the Multi-Domain Sentiment Dataset for the Sentiment Analysis task are not readily available from the current search results. It is recommended to consult specific academic papers or resources that focus on the DANN method and its application to the Multi-Domain Sentiment Dataset for detailed information. | Average, Books, DVD, Electronics, Kitchen => 0.0
+The MTGAE method is evaluated on the Pubmed dataset for the Link Prediction task using metrics such as Mean Reciprocal Rank (MRR) and Hits@k. | Accuracy => 0.0
+The Duel_noop method is evaluated on the Atari 2600 Games task, which involves training an agent to achieve high game scores. However, specific datasets used for the evaluation of the Duel_noop method were not identified in the search results. | Atari_2600_Ms__Pacman => 0.0
+The Mult-DAE method is evaluated on the Netflix dataset for the Collaborative Filtering task using metrics such as Root Mean Square Error (RMSE), Mean Absolute Error (MAE), Precision, and Recall. | Recall_20, Recall_50 => 0.5
+The Sample_Clustering method evaluation datasets for Few-Shot Image Classification could not be found in the available resources. | CUB-200_-_0-Shot_Learning => 0.0
+The DDQN__tuned__noop method is evaluated on the 57 Atari 2600 games from the Arcade Learning Environment (ALE). | Atari_2600_Berzerk => 0.0
+The DDQN__tuned__hs method is evaluated on the Atari 2600 games, including "Name This Game," "Duel," "Advantage Learning," and "Prior." | Atari_2600_Assault => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 1797.39 seconds
+Total Tokens: 198,187 (1,090 in, 197,097 out)
+Total Cost: $1.9737
+Average Score: 0.237
+Average Score: 0.2375
+Evaluation Cost: $1.9737
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use in order to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. To enhance your performance, ensure that you select the most appropriate tool for each specific query. For instance, use ARXIV_SEARCH for queries related to specific academic papers and WEB_SEARCH for broader informational needs. Consider using multiple tools in sequence to gather comprehensive information, especially for complex queries. This approach will help you cross-verify and ensure the accuracy and completeness of the information gathered.
+
+To improve performance on negative inputs, focus on refining your input queries to be more specific and targeted. Incorporate additional keywords or phrases that are likely to be present in the desired information, such as the dataset name, task, and evaluation metric. This will enhance the relevance of the results retrieved. Implement a feedback loop to learn from past queries by analyzing unsuccessful attempts to understand what went wrong and how it can be corrected in future attempts. This continuous improvement process will enhance your ability to select the right tools and formulate effective queries.
+
+Finally, ensure that you cross-verify the information obtained by using multiple tools. Compare results from different sources to identify the most reliable information. This practice will help you provide a well-rounded and accurate response to the user query. Remember, you can opt to use no tools and provide the final answer directly if the information is already known or straightforward. You can also use one tool multiple times with different input queries if applicable. By following these guidelines, you will improve your performance on the task and achieve the desired outcomes more effectively.
+
+                Optimization Process Metrics
+                ==========================
+                Total Execution Time: 2128.44 seconds
+                Evaluation Time: 2029.27 seconds
+                Total API Calls: 8
+                - Comparator calls: 4
+                - Feedback instruction calls: 4
+
+                Token Usage:
+                ----------
+                Total Tokens: 223,010
+                - Input tokens: 219,980
+                - Output tokens: 3,030
+
+                Cost Analysis:
+                ------------
+                Estimated Total Cost: $6.7812
+                
+Processing examples:   0%|          | 0/60 [00:00<?, ?it/s]The U-Net method for Skin Cancer Segmentation is evaluated on datasets such as ISIC-2016, ISIC-2017, and ISIC-2018. | Kaggle_Skin_Lesion_Segmentation => 0.5
+The Paragraph_vector__lexical_overlap___dist_output_ method is evaluated on the QASent dataset for the Question Answering task using the metrics MAP and MRR. | MAP, MRR => 1.0
+The method TANDA achieves the highest MAP score on the WikiQA dataset for the Question Answering task, with a MAP score of 92%. | Key-Value_Memory_Network => 0.0
+SERNet-Former achieves the highest Mean IoU score of 84.62% on the CamVid dataset for the Semantic Segmentation task. | PSPNet => 0.0
+Processing examples:   2%|▏         | 1/60 [00:23<23:24, 23.80s/it]Processing examples:   3%|▎         | 2/60 [01:01<30:50, 31.90s/it]MuZero achieves the highest score on the Atari 2600 Name This Game dataset for the Atari Games task. | IQN => 0.0
+The FDNet method is evaluated on the WIDER Face Easy dataset using the Average Precision (AP) metric. | AP => 1.0
+The method "RankPose: Learning Generalised Feature with Rank Supervision for Head Pose Estimation" achieves the highest MAE score on the BIWI dataset for the Head Pose Estimation task, reducing the MAE from 4.0 to 3.71. | 3DDFA => 0.0
+The method "Discriminative Unsupervised Feature Learning with Convolutional Neural Networks" is evaluated on the STL-10 dataset for the Image Classification task. | STL-10 => 1.0
+The Deep Speech method is evaluated on the Wall Street Journal (WSJ) and LibriSpeech datasets for the Speech Recognition task. | Switchboard___Hub500 => 0.0
+The Snips method for the Speech Recognition task is evaluated on datasets such as the Fluent Speech Commands and Snips SmartLights datasets. | LibriSpeech_test-clean => 0.0
+The method "Discriminative Unsupervised Feature Learning with Convolutional Neural Networks" is evaluated on the STL-10 dataset for the Image Classification task. | CIFAR-10 => 0.0
+The FRCN (Fast Region-based Convolutional Network) method is commonly evaluated on well-known object detection datasets such as PASCAL VOC and MS COCO. | PASCAL_VOC_2007 => 0.5
+The TuckER method is evaluated on standard link prediction datasets, including FB15K-237 and WN18RR. | FB15k-237 => 0.5
+The Bootstrapped DQN method is evaluated on the Atari game dataset, specifically across 49 Atari games in the Arcade Learning Environment. | Atari_2600_Montezuma_s_Revenge => 0.0
+The Transformer method for machine translation is commonly evaluated on datasets such as the WMT family of datasets. Additionally, research papers have evaluated Transformer models on various document-level and sentence-level datasets across multiple languages. | IWSLT2015_English-German => 0.5
+The method that achieves the highest Error score on the Yelp Binary classification dataset for the Sentiment Analysis task is a shallow word model, which establishes a state-of-the-art performance with an accuracy of 95.9%. | Char-level_CNN => 0.0
+The method that achieves the highest F1 score on the CoNLL 2003 English dataset for Named Entity Recognition (NER) is ACE + document-context with an F1 score of 94.6. | CVT___Multi-Task => 0.0
+The LiteFlowNet method achieves the highest Average End-Point Error score for Optical Flow Estimation on the Sintel final pass dataset. | Sintel-final => 1.0
+The AWD-LSTM-DOC method is evaluated on the WikiText-2 dataset for the Language Modelling task using the metric of perplexity. | Number_of_params, Test_perplexity, Validation_perplexity => 0.5
+The MemNNs ensemble method has been evaluated on the bAbI dataset for the Question Answering task. | CNN___Daily_Mail => 0.0
+The SRCNN method is evaluated on the Manga109 - 4x upscaling dataset for the Image Super-Resolution task using the Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) metrics. | PSNR, SSIM => 1.0
+SparseGPT (175B, 50% Sparsity) is the current state-of-the-art on WikiText-2 for language modeling, but specific information about the highest Number_of_params score is not readily available. | AWD-LSTM-DOC => 0.0
+The NICE method for image generation on the CIFAR-10 dataset is typically evaluated using metrics such as the Inception Score (IS) and the Fréchet Inception Distance (FID). These metrics assess the quality and diversity of the generated images. | NLL_Test => 0.0
+The DPN-131 method for image classification has been evaluated on the ImageNet-1k, Places365-Standard, and PASCAL VOC datasets. | ImageNet => 0.5
+MuZero achieves the highest score on the Atari 2600 Robotank dataset for the Atari Games task with a score of 131.13. | Bootstrapped_DQN => 0.0
+The method that achieves the highest accuracy score on the Cora dataset for the node classification task is the Graph-Learning-Dual Graph Convolutional Neural Network (GLDGCN), as mentioned in the paper titled "Graph Convolutional Network For Semi-supervised Node Classification With Subgraph Sketching" by Zibin Huang and Jun Xian, published in 2024. | GCN => 0.0
+The Spynet method for Optical Flow Estimation is evaluated on the MPI Sintel, Middlebury, KITTI 2012, and KITTI 2015 datasets. | Sintel-final => 0.5
+EffNet-L2 (SAM) achieves the highest Percentage_correct score of 96.08 on the CIFAR-100 dataset for the Image Classification task. | Res2NeXt-29 => 0.0
+The SVDCNN method for text classification is evaluated on the following datasets: AG's News, Sogou News, DBPedia, Yelp Reviews, Yahoo! Answers, and Amazon Reviews. | AG_News => 0.5
+The 300D_NTI-SLSTM-LSTM_encoders method is evaluated on the Stanford Natural Language Inference (SNLI) dataset and the Multi-Genre Natural Language Inference (MultiNLI) dataset for the Natural Language Inference task. | SNLI => 0.5
+The Field-gating Seq2seq with dual attention method is evaluated on the WikiBio dataset using metrics such as BLEU, ROUGE, and PARENT. | BLEU, ROUGE => 0.5
+The evaluation metrics for the Prior_Duel_hs method on the Atari_2600_Alien dataset for the Atari_Games task are not readily available from the searched sources. It may require accessing specific research papers or datasets that detail the evaluation process for this method. | Score => 0.0
+The IDE + CamStyle + Random Erasing method for Person Re-Identification is evaluated on the Market-1501 and DukeMTMC-reID datasets. | Market-1501 => 0.5
+The IQN method achieves the highest Score on the 57 Atari 2600 games dataset in the ALE (Arcade Learning Environment). | Atari_2600_Atlantis => 0.0
+The Ann_PAT_MT method's evaluation metrics on the CoNLL-2014_A2 dataset for the Grammatical Error Detection task are not explicitly found in the available resources. However, the CoNLL-2014 shared tasks typically use the MaxMatch (M2) metric for evaluation, which is a common metric for grammatical error correction tasks. | F0_5 => 0.0
+The ConvNet method for Keypoint Detection on the Pascal3D dataset is evaluated using the Percentage of Correct Keypoints (PCK) metric. | Mean_PCK => 0.5
+The highest Train_Accuracy score on the SNLI dataset for the Natural Language Inference task is not readily available from the current search results. However, the state-of-the-art accuracy on the SNLI dataset is reported to be 88.6% for test accuracy, but specific Train_Accuracy scores are not mentioned in the available resources. | __Unigram_and_bigram_features => 0.0
+The information about the SVDCNN method achieving the highest error score for the Sentiment Analysis task on a specific dataset is not available in the current search results. | Yelp_Fine-grained_classification => 0.0
+The method EASE achieves the highest Recall_50 score on the Million Song Dataset for the Collaborative Filtering task, with a score of 0.428. | Mult-VAE_PR => 0.0
+The PNN method for Click-Through Rate Prediction on the Bing_News dataset is evaluated using the AUC (Area Under the Curve) and Logloss metrics. The performance of PNN is reported with an AUC of 0.8321 and a Logloss of 0.2775. | AUC, Log_Loss => 1.0
+The Paragraph_vector method for the Question Answering task is evaluated on datasets such as SQuAD, HotPotQA, bAbI, TriviaQA, and WikiQA. However, specific datasets evaluated using the Paragraph_vector method were not found in the search results. | WikiQA => 0.5
+The DeepMatching method is evaluated on the HPatches dataset for the Dense Pixel Correspondence Estimation task using the Mean Matching Accuracy (MMA) metric. The algorithm achieves overall scores of 0.57 and 0.80 in terms of MMA for 1 pixel and 2 pixels thresholds, respectively. | Viewpoint_I_AEPE, Viewpoint_II_AEPE, Viewpoint_III_AEPE, Viewpoint_IV_AEPE, Viewpoint_V_AEPE => 0.0
+The Impatient_Reader method is evaluated on the CNN/Daily Mail dataset for the Question Answering task using accuracy as a metric, with a reported accuracy of 63.8%. | CNN, Daily_Mail => 1.0
+Processing examples:   7%|▋         | 4/60 [01:28<19:10, 20.54s/it]Processing examples:  28%|██▊       | 17/60 [01:36<02:30,  3.50s/it]Processing examples:  72%|███████▏  | 43/60 [1:59:45<55:04, 194.37s/it]Processing examples: 100%|██████████| 60/60 [1:59:45<00:00, 119.76s/it]
+The DQN_noop method is evaluated on the Atari 2600 games, which are part of the Arcade Learning Environment (ALE). The specific datasets or games for DQN_noop were not explicitly found in the search results, but it is generally evaluated on a wide range of Atari games as part of the ALE benchmark. | Atari_2600_River_Raid => 0.0
+The ACF-WIDER method achieves the highest AP score on the WIDER FACE dataset for the Face Detection task. | WIDER_Face__Easy_ => 0.0
+The DDQN__tuned__noop method achieves the highest Score score on the Atari 2600 Breakout dataset with a score of 368.9. | Atari_2600_Video_Pinball => 0.0
+The 3DDFA method is evaluated on the Florence dataset for the 3D Face Reconstruction task using geometric error metrics, specifically 3D-RMSE (Root Mean Square Error). | Mean_NME_ => 0.0
+The S-Norm method's evaluation datasets for the Question Answering task were not specifically identified in the search results. The searches did not yield any direct information about the datasets used for evaluating the S-Norm method in the context of Question Answering. | TriviaQA => 0.0
+The DQN_hs method's evaluation datasets for the Atari Games task are not explicitly mentioned in the available resources. The search did not yield specific datasets or games on which the DQN_hs method was evaluated. | Atari_2600_Chopper_Command => 0.0
+The DRCN method for Image Super-Resolution on the Set5 dataset with 4x upscaling is typically evaluated using the Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) metrics. | MOS, PSNR, SSIM => 0.67
+The CRN method for Image-to-Image Translation does not have specific datasets mentioned in the available search results. The search results did not provide information on the datasets used for evaluating the CRN method in this task. | ADE20K-Outdoor_Labels-to-Photos => 0.0
+The Stacked Hourglass Networks achieve the highest PCK@0.2 score for the Pose Estimation task on the LSP dataset. | FLIC_Elbows => 0.0
+The DeepLab-LargeFOV method is evaluated on the SUN-RGBD dataset for the Scene Segmentation task using metrics such as Mean Intersection over Union (mIoU) and accuracy metrics like Pixel Accuracy (PixAcc) and Mean Accuracy (mAcc). | Mean_IoU => 0.5
+The VGG/Resnet/LACE/BiLSTM acoustic model trained on SWB+Fisher+CH, N-gram + RNNLM language model trained on Switchboard+Fisher+Gigaword+Broadcast is evaluated on the NIST 2000 Switchboard task for the Speech Recognition task. | swb_hub_500_WER_fullSWBCH => 0.0
+Inception_V2 is typically evaluated on the ImageNet dataset using top-1 and top-5 accuracy metrics for the Image Classification task. | Top_1_Accuracy, Top_5_Accuracy => 1.0
+The current state-of-the-art on the SNLI dataset for the Natural Language Inference task is Neural Tree Indexers for Text Understanding. However, specific information about the model achieving the highest parameters score is not readily available from the search results. | 300D_Residual_stacked_encoders => 0.0
+The CyCADA method is evaluated on the SYNTHIA Fall-to-Winter dataset for the Image-to-Image Translation task using metrics such as semantic segmentation accuracy. However, specific evaluation metrics like pixel accuracy or mean Intersection over Union (mIoU) were not explicitly found in the search results. | Per-pixel_Accuracy, fwIOU, mIoU => 0.0
+The iBOWIMG_baseline method achieves the highest Percentage_correct score for the Visual Question Answering task on the COCO VQA dataset. | COCO_Visual_Question_Answering__VQA__real_images_1_0_multiple_choice => 0.5
+I was unable to find specific datasets on which the VAT_EntMin method is evaluated for the Semi-Supervised Image Classification task. | CIFAR-10__4000_Labels => 0.0
+The SRCNN method for Video Super-Resolution tasks is evaluated on various datasets, including publicly available benchmark datasets. However, specific datasets commonly used for evaluation in super-resolution tasks include Set5, Set14, and DIV2K. These datasets are often used to assess the performance of super-resolution models, including SRCNN, in terms of image quality metrics like PSNR (Peak Signal-to-Noise Ratio). | Vid4_-_4x_upscaling => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 7185.91 seconds
+Total Tokens: 314,033 (1,642 in, 312,391 out)
+Total Cost: $3.1280
+Average Score: 0.270
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]The method that achieves the highest PSNR score on the Set14 - 4x upscaling dataset for Image Super-Resolution is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The DeepFM method achieves the highest Log_Loss score for Click-Through Rate Prediction on the datasets used in the experiments mentioned in the DeepFM paper, which include both benchmark data and commercial data. However, the specific dataset with the highest Log_Loss score is not explicitly mentioned in the provided results. | Criteo => 0.0
+Processing examples:   2%|▎         | 1/40 [00:20<13:28, 20.73s/it]The highest BLEU score on the WMT2014 English-German dataset for Machine Translation is 35.14, achieved by the Transformer Cycle (Rev) model. | Weighted_Transformer__large_ => 0.0
+The method that achieves the highest PCK score on the Leeds Sports Poses dataset for the Pose Estimation task is OmniPose with a PCK score of 99.5%. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The Bi-LSTM trained on FCE method achieves the highest F0.5 score on the FCE dataset for the Grammatical Error Detection task, as indicated by the results in the paper by Masahiro Kaneko and Mamoru Komachi. | CoNLL-2014_A2 => 0.0
+The ByteNet method is evaluated on the English-to-German WMT translation task for Machine Translation. | WMT2014_English-French => 0.0
+The Duel_hs method evaluation datasets for Atari_Games were not found in the available resources. Further specific research or access to the original paper or documentation may be required to obtain this information. | Atari_2600_Video_Pinball => 0.0
+The PFF method for Image Super-Resolution is evaluated on the RealSR dataset, which includes real-world low-resolution and high-resolution image pairs captured using different cameras. | Set14_-_4x_upscaling => 0.0
+The highest F1 score for Semantic Role Labeling on the OntoNotes dataset is 87.0 F1, achieved by the span-based model presented by Hiroki Ouchi, Hiroyuki Shindo, and Yuji Matsumoto. | Li_et_al_ => 0.0
+The Frustum_PointNets method is evaluated on the KITTI and Lyft datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+The method that achieves the highest Medium_Human-Normalized_Score score on the Atari-57 dataset for Atari_Games is Agent57, developed by DeepMind. | Ape-X => 1.0
+The highest Score score on the Atari_2600_Road_Runner dataset for the Atari_Games task is achieved by GDI-H3 with a score of 999999. | Duel_noop => 0.0
+The current state-of-the-art on the Penn Treebank (Word Level) dataset for language modeling is achieved by GPT-3 (Zero-Shot) with a word-level perplexity score of 20.5. | Tied_Variational_LSTM___augmented_loss => 0.0
+The method achieving the highest MRR score on the FB15k dataset for the Link Prediction task is AutoKGE with an MRR of 0.861. | TuckER => 0.0
+Processing examples:   5%|▌         | 2/40 [00:47<15:22, 24.28s/it]Processing examples:  10%|█         | 4/40 [00:49<05:43,  9.55s/it]Processing examples:  28%|██▊       | 11/40 [00:53<01:21,  2.80s/it]Processing examples:  48%|████▊     | 19/40 [00:56<00:29,  1.42s/it]Processing examples: 100%|██████████| 40/40 [00:56<00:00,  1.40s/it]
+The Sample_Clustering method for Few-Shot Image Classification is evaluated on several benchmark datasets, including miniImageNet, tieredImageNet, CIFAR-FS, FC100, and CUB. | CUB-200_-_0-Shot_Learning => 0.5
+The available search results do not provide specific datasets on which the DCCL method is evaluated for the Machine Translation task. It seems that the DCCL method might not be directly associated with Machine Translation datasets based on the current information. | IWSLT2015_German-English => 0.0
+The Transformer method for the IWSLT2015 German-English dataset in the Machine Translation task is typically evaluated using metrics such as BLEU, METEOR, and NIST. However, specific details for this dataset were not found in the search results. | BLEU_score => 0.0
+The LISA method achieves the highest F1 score for Predicate_Detection on the CoNLL-2005 SRL dataset, with an increase of 2.5 F1 absolute over the previous state-of-the-art on newswire. | CoNLL_2005 => 1.0
+The Mult-DAE method is evaluated on the Netflix dataset using the NDCG@100 metric for the Collaborative Filtering task. | Recall_20, Recall_50 => 0.0
+The Duel_noop method is evaluated on 57 Atari games for the Atari_Games task. | Atari_2600_Ms__Pacman => 0.0
+The ResNet_ELU method is evaluated on the CIFAR-100 dataset using the metric of test error percentage. It achieved a test error of 24.28%, which is noted as the best published result on CIFAR-100 without using multi-view evaluation or model averaging. | Percentage_correct => 1.0
+The IDE____CamStyle method is evaluated on the PRID2011, iLIDS-VID, and VIPeR datasets for the Person Re-Identification task. | DukeMTMC-reID => 0.0
+The TARNet method for causal inference is evaluated on the semi-synthetic IHDP dataset and the Jobs dataset, which includes both a randomized and a non-randomized component. | IDHP => 0.5
+The DANN method is evaluated on the Multi-Domain Sentiment Dataset using classification accuracy as the primary metric. The dataset includes Amazon reviews across four domains: books, DVDs, electronics, and kitchen appliances. The evaluation involves 12 domain adaptation tasks, and the DANN method is compared against a standard neural network and a Support Vector Machine. The results show that DANN has significantly better performance in terms of classification accuracy. | Average, Books, DVD, Electronics, Kitchen => 0.5
+The Duel_noop method is evaluated on 57 Atari games for the Atari_Games task. | Atari_2600_Time_Pilot => 0.0
+The highest AP_0_5 score on the PASCAL-Person-Part dataset for the Multi-Human Parsing task is achieved by the NAN method with a score of 59.70%. | NAN => 0.0
+The datasets on which the DDQN__tuned__hs method is evaluated for the Atari_Games task are not explicitly mentioned in the retrieved information. It seems that the specific datasets or games used for evaluation are not detailed in the available sources. | Atari_2600_Assault => 0.0
+CornerNet-Squeeze is evaluated on the COCO dataset for the Real-Time Object Detection task. | COCO => 1.0
+The MTGAE method evaluation metrics on the Pubmed dataset for the Link_Prediction task are not explicitly found in the available resources. It is suggested to refer to the original research paper or supplementary materials for detailed evaluation metrics. | Accuracy => 0.0
+The DDQN__tuned__noop method is evaluated on 57 Atari games. | Atari_2600_Berzerk => 0.0
+The BiDAF___Self_Attention__single_model_ method is evaluated on the SQuAD and CNN/DailyMail datasets for the Question Answering task. | SQuAD1_1 => 0.0
+The CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method is evaluated on the swb_hub_500_WER_fullSWBCH dataset using Word Error Rate (WER) as the primary metric for the Speech Recognition task. | Percentage_error => 1.0
+The A3C-CTS method is evaluated on the Atari 2600 suite of games, which includes a variety of games used to assess exploration methods in reinforcement learning. Specific games mentioned include Montezuma's Revenge and other hard exploration games with sparse rewards. | Atari_2600_Venture => 0.5
+The IQN method is evaluated on the Atari 2600 Games task, which involves training an agent to achieve high scores across a diverse set of games. The evaluation typically involves using a set of Atari ROMs and comparing performance metrics such as mean and median human-normalized scores across multiple games. | Atari_2600_Kung-Fu_Master => 0.0
+The Subgraph_embeddings method for the Question_Answering task on the WebQuestions dataset is evaluated using a scoring function that learns to generate high scores for correct answers and low scores for incorrect ones. However, specific evaluation metrics such as precision, recall, or F1 score were not explicitly mentioned in the retrieved documents. | F1 => 0.0
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using two main metrics: Average Precision (AP) at 50% intersection-over-union (IoU) and CorLoc. AP measures the precision of detected boxes against ground truth boxes, while CorLoc measures the percentage of images with at least one correctly localized instance of the target object class. | MAP => 0.5
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset using metrics such as Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM). | PSNR => 0.5
+The MT-DNN method is evaluated on the MultiNLI dataset for the Natural Language Inference task using classification accuracy as the evaluation metric. | Matched, Mismatched => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset for the Curved_Text_Detection task using precision, recall, and F-measure metrics. PSENet-1s achieves a precision of 82.50%, recall of 79.89%, and F-measure of 81.17%. | F-Measure => 1.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 56.69 seconds
+Total Tokens: 62,593 (1,090 in, 61,503 out)
+Total Cost: $0.6178
+Average Score: 0.237
+Average Score: 0.2375
+Evaluation Cost: $0.6178
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. Begin by implementing a pre-processing step to interpret and refine the query, breaking it down into simpler components if necessary. This will help in aligning the query with the most suitable tools. For specific queries related to academic papers or datasets, prioritize using the `ARXIV_SEARCH` and `RETRIEVE` tools. These tools are effective for gathering precise information. Use the `WEB_SEARCH` tool for broader queries only when necessary, ensuring that the query is as specific as possible to improve the precision of the results.
+
+Develop a nuanced strategy for tool selection by considering the specificity and nature of the query. For instance, if the query is about a well-documented dataset or method, use `ARXIV_SEARCH` or `RETRIEVE` to gather information and confirm it with a `WEB_SEARCH` if needed. For less common or broad queries, refine the query to make it more specific or consider expanding the data sources available to the tools. This could involve integrating additional databases or APIs that specialize in niche areas relevant to the queries, thereby improving the chances of retrieving accurate information.
+
+Introduce a feedback loop to learn from past queries and results, enhancing future tool selection and query handling. This adaptive approach can be achieved through machine learning techniques, allowing the system to refine its strategy based on success rates. By incorporating these strategies, you can improve performance on negative inputs, leading to more consistent and accurate results across a wider range of queries.
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]Processing examples:   2%|▎         | 1/40 [00:09<06:05,  9.38s/it]The ByteNet method is evaluated on the English-to-German WMT translation task for the Machine Translation task. | WMT2014_English-French => 0.0
+OmniPose achieves the highest PCK score of 99.5% on the Leeds Sports Poses dataset for the Pose Estimation task. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The IQN method is evaluated on 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Kung-Fu_Master => 0.5
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset using PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index) metrics for the Image Super-Resolution task. | PSNR => 0.5
+The method 'Past Decode Regularization (PDR)' achieves a word level perplexity of 53.8 on the Penn Treebank dataset for language modeling, which is a state-of-the-art result. | Tied_Variational_LSTM___augmented_loss => 0.0
+The method achieving the highest F1 score on the OntoNotes dataset for the Semantic Role Labeling task is HeSyFu with an F1 score of 88.59. | Li_et_al_ => 0.0
+The BiDAF Self Attention single model method is evaluated on the Stanford Question Answering Dataset (SQuAD). | SQuAD1_1 => 0.5
+The method that achieves the highest PSNR score on the Set14 4x upscaling dataset for Image Super-Resolution is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The method achieving the highest score on the Atari 2600 Road Runner dataset for the Atari Games task is GDI-H3. | Duel_noop => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The MTGAE method is evaluated on the Pubmed dataset for the Link Prediction task using the MRR (Mean Reciprocal Rank) metric, achieving a relative improvement of 18.82%. | Accuracy => 0.0
+The highest BLEU score on the WMT2014 English-German dataset for the Machine Translation task is 28.4, achieved by a model in 2023. | Weighted_Transformer__large_ => 0.0
+The method achieving the highest MRR score on the FB15k dataset for the Link Prediction task is AutoKGE with an MRR of 0.861. | TuckER => 0.0
+The MT-DNN method is evaluated on the MultiNLI dataset using classification accuracy as the evaluation metric. | Matched, Mismatched => 0.0
+Unable to find specific evaluation metrics for ResNet_ELU on CIFAR-100. Consider checking specific research papers or implementations for detailed metrics. | Percentage_correct => 0.0
+The DANN method is evaluated on the Multi-Domain Sentiment Dataset using classification accuracy as the primary metric. The dataset includes Amazon reviews from four domains: books, DVDs, electronics, and kitchen appliances. The evaluation involves 12 domain adaptation tasks, with DANN showing significantly better performance compared to a standard neural network and a Support Vector Machine, as indicated by the Poisson binomial test. | Average, Books, DVD, Electronics, Kitchen => 0.0
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task according to the available resources. The ARXIV_SEARCH and RETRIEVE tools did not provide relevant information about DCCL's evaluation on Machine Translation datasets. | IWSLT2015_German-English => 0.0
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using the standard PASCAL VOC protocol, which includes average precision (AP) at 50% intersection-over-union (IoU) and CorLoc. AP measures the precision of detected boxes against ground truth, while CorLoc measures the percentage of images with at least one correctly localized instance of the target object class. | MAP => 0.5
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset using metrics such as F-measure, precision, and recall. Notably, PSENet achieves a F-measure of 74.3% at 27 FPS, and the best F-measure reported is 82.2%, which outperforms state-of-the-art methods. | F-Measure => 0.5
+The TARNet method for causal inference is evaluated on datasets such as the semi-synthetic IHDP dataset and the Jobs dataset, which includes both randomized and non-randomized components. | IDHP => 0.5
+The IDE_CamStyle method for Person Re-Identification is evaluated on the Market-1501 and MSMT17 datasets. | DukeMTMC-reID => 0.0
+The Bi-LSTM model trained on the FCE dataset achieves the highest F0.5 score for the Grammatical Error Detection task when using the FCE-public dataset, as additional datasets like NUCLE did not improve performance due to domain differences. | CoNLL-2014_A2 => 0.0
+DeepFM achieves the highest Log_Loss score for Click-Through Rate Prediction on the Criteo dataset. | Criteo => 1.0
+Agent57 achieves the highest Medium Human-Normalized Score on the Atari-57 dataset for Atari Games. | Ape-X => 0.0
+The search did not yield specific results for the 'Sample_Clustering' method's evaluation datasets in Few-Shot Image Classification. It might be beneficial to check specific academic papers or repositories related to this method for detailed information. | CUB-200_-_0-Shot_Learning => 0.0
+The Transformer method for the IWSLT2015 German-English dataset in the Machine Translation task is typically evaluated using common machine translation metrics such as BLEU, METEOR, and NIST. However, specific metrics used in the context of IWSLT2015 were not found in the search results. | BLEU_score => 0.0
+The method achieving the highest AP_0_5 score on the PASCAL-Person-Part dataset for the Multi-Human Parsing task is NAN with a score of 59.70%. | NAN => 0.5
+The PFF method for Image Super-Resolution does not appear to be specifically evaluated on any datasets according to the available search results. Further specific information on the PFF method's evaluation datasets might not be readily available in the current resources. | Set14_-_4x_upscaling => 0.0
+Processing examples:   5%|▌         | 2/40 [02:04<45:09, 71.31s/it]Frustum_PointNets method is evaluated on KITTI and SUN RGB-D datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+The Duel_hs method evaluation datasets for the Atari Games task were not found in the available resources. Further specific information might be required to locate the exact datasets used for evaluation. | Atari_2600_Video_Pinball => 0.0
+The Duel_noop method is evaluated on 57 Atari games, using both human and noop start settings. The evaluation includes mean and median human normalized scores, mean rank, and Elo scores across all games. | Atari_2600_Time_Pilot => 0.0
+The Duel_noop method is evaluated on 57 Atari games, using both noop and human start settings. The evaluation includes mean and median human normalized scores, mean rank, and Elo scores across all games. | Atari_2600_Ms__Pacman => 0.0
+Processing examples:  10%|█         | 4/40 [02:13<17:39, 29.42s/it]The DDQN__tuned__noop method is evaluated on 57 Atari 2600 games from the arcade learning environment. | Atari_2600_Berzerk => 0.0
+Processing examples:  18%|█▊        | 7/40 [02:21<07:48, 14.21s/it]Processing examples:  30%|███       | 12/40 [03:06<05:11, 11.13s/it]Processing examples:  57%|█████▊    | 23/40 [03:33<01:35,  5.59s/it]Processing examples: 100%|██████████| 40/40 [04:23<00:00,  4.01s/it]Processing examples: 100%|██████████| 40/40 [04:23<00:00,  6.58s/it]
+The A3C-CTS method is evaluated on the Atari 2600 suite of games, which includes a variety of games such as Montezuma's Revenge and others with sparse rewards. The method is assessed within the Arcade Learning Environment (ALE). | Atari_2600_Venture => 0.5
+The DDQN__tuned__hs method is evaluated on 57 Atari games, using 30 random human starts and noop starts, with performance compared across various state-of-the-art algorithms. | Atari_2600_Assault => 0.0
+The Subgraph_embeddings method for the WebQuestions dataset in the Question Answering task is evaluated using a scoring function S(q, a) that generates a high score if a is the correct answer to the question q, and a low score otherwise. The method involves learning low-dimensional vector embeddings of words, entities, and relation types to ensure that representations of questions and their corresponding answers are close in the joint embedding space. | F1 => 0.0
+The LISA method achieves the highest F1 score for the Predicate_Detection task on datasets with scores above 97 F1, outperforming previous methods by 1.5-2 F1 points. | CoNLL_2005 => 0.0
+The CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method is evaluated using the Word Error Rate (WER) metric on the swb_hub_500_WER_fullSWBCH dataset for the Speech Recognition task. However, specific details about additional evaluation metrics used on this dataset were not found in the available resources. | Percentage_error => 0.0
+The Mult-DAE method for collaborative filtering on the Netflix dataset is typically evaluated using metrics such as RMSE (Root Mean Square Error), MAE (Mean Absolute Error), and NDCG (Normalized Discounted Cumulative Gain). However, specific details on the evaluation metrics used for Mult-DAE were not found in the search results. | Recall_20, Recall_50 => 0.0
+The datasets on which CornerNet-Squeeze is evaluated for real-time object detection are not explicitly mentioned in the available search results. Further specific searches or access to the original paper might be required to obtain this information. | COCO => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 264.11 seconds
+Total Tokens: 199,593 (1,090 in, 198,503 out)
+Total Cost: $1.9878
+Average Score: 0.138
+Average Score: 0.1375
+Evaluation Cost: $1.9878
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. Begin by implementing a pre-processing step to interpret and refine the query, breaking it down into simpler components if necessary. This will help in aligning the query with the most suitable tools. For specific queries related to academic papers or datasets, prioritize using the `ARXIV_SEARCH` and `RETRIEVE` tools. These tools are effective for gathering precise information. Use the `WEB_SEARCH` tool for broader queries only when necessary, ensuring that the query is as specific as possible to improve the precision of the results.
+
+To enhance performance on negative inputs, focus on refining the specificity and context of queries. Implement a robust pre-processing step that involves breaking down complex queries into simpler components and identifying key terms that align with the available tools. This will ensure that the tool selection is based on the specificity and nature of the query. For instance, if a query is about a specific dataset or method, prioritize using `ARXIV_SEARCH` or `RETRIEVE` to gather detailed information. For less common or broad queries, refine the query to make it more specific or consider expanding the data sources available to the tools by integrating additional databases or APIs that specialize in niche areas relevant to the queries.
+
+Introduce a feedback loop to learn from past queries and results, enhancing future tool selection and query handling. This adaptive approach can be achieved through machine learning techniques, allowing the system to refine its strategy based on success rates. By incorporating these strategies, you can improve performance on negative inputs, leading to more consistent and accurate results across a wider range of queries.
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]Processing examples:   2%|▎         | 1/40 [00:03<02:13,  3.42s/it]The method achieving the highest F1 score on the OntoNotes dataset for the Semantic Role Labeling task is HeSyFu with an F1 score of 88.59. | Li_et_al_ => 0.0
+OmniPose achieves the highest PCK score of 99.5% on the Leeds Sports Poses dataset for the Pose Estimation task. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The ByteNet method is evaluated on the English-to-German WMT translation task for the Machine Translation task. | WMT2014_English-French => 0.0
+The highest BLEU score on the WMT2014 English-German dataset for the Machine Translation task is 28.4, achieved by a model in 2023. | Weighted_Transformer__large_ => 0.0
+The method that achieves the highest PSNR score on the Set14 4x upscaling dataset for Image Super-Resolution is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The method 'Past Decode Regularization (PDR)' achieves a word level perplexity of 53.8 on the Penn Treebank dataset for language modeling, which is a state-of-the-art result. | Tied_Variational_LSTM___augmented_loss => 0.0
+The BiDAF Self Attention single model method is evaluated on the Stanford Question Answering Dataset (SQuAD). | SQuAD1_1 => 0.5
+The IQN method is evaluated on 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Kung-Fu_Master => 0.5
+The method achieving the highest score on the Atari 2600 Road Runner dataset for the Atari Games task is GDI-H3. | Duel_noop => 0.0
+The MTGAE method is evaluated on the Pubmed dataset for the Link Prediction task using the MRR (Mean Reciprocal Rank) metric, achieving a relative improvement of 18.82%. | Accuracy => 0.0
+The IDE_CamStyle method for Person Re-Identification is evaluated on the Market-1501 and DukeMTMC-reID datasets. | DukeMTMC-reID => 0.5
+The specific evaluation metrics for the ResNet_ELU method on the CIFAR-100 dataset for Image Classification were not found in the available resources. Further detailed research or access to specific papers or datasets might be required to obtain this information. | Percentage_correct => 0.0
+The method achieving the highest MRR score on the FB15k dataset for the Link Prediction task is AutoKGE with an MRR of 0.861. | TuckER => 0.0
+The CornerNet-Squeeze method is evaluated on the PASCAL VOC and MS COCO datasets for the Real-Time Object Detection task. | COCO => 0.5
+The MT-DNN method is evaluated on the MultiNLI dataset using classification accuracy as the evaluation metric. | Matched, Mismatched => 0.0
+The LISA method achieves the highest F1 score for the Predicate_Detection task on the COLX 563 dataset, with scores above 97 F1. | CoNLL_2005 => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset using metrics such as precision, recall, and F-measure. | F-Measure => 0.5
+The Bi-LSTM model trained on the FCE dataset achieves the highest F0.5 score for the Grammatical Error Detection task when using the FCE-public dataset, as additional datasets like NUCLE did not improve performance due to domain differences. | CoNLL-2014_A2 => 0.0
+Processing examples:   5%|▌         | 2/40 [01:05<23:55, 37.77s/it]Processing examples:  10%|█         | 4/40 [01:30<13:13, 22.05s/it]Processing examples:  15%|█▌        | 6/40 [01:46<08:45, 15.46s/it]Processing examples:  32%|███▎      | 13/40 [02:55<05:09, 11.45s/it]Processing examples: 100%|██████████| 40/40 [02:55<00:00,  4.38s/it]
+The Duel_noop method is evaluated on 57 Atari games, using both noop and random human start settings. The evaluation includes mean and median human normalized scores, mean rank, and Elo scores across these games. | Atari_2600_Ms__Pacman => 0.0
+DeepFM achieves the highest Log_Loss score for Click-Through Rate Prediction on the Criteo dataset. | Criteo => 1.0
+The Duel_noop method is evaluated on 57 Atari games, including a variety of games such as Assault, Asterix, Breakout, Demon Attack, Double Dunk, Gopher, Phoenix, Stargunner, Up’n Down, and Video Pinball. The evaluation involves using noop starts and human starts to assess performance across these games. | Atari_2600_Time_Pilot => 0.0
+The Transformer method is typically evaluated using metrics such as BLEU, METEOR, and others for machine translation tasks. However, specific metrics used for the IWSLT2015 German-English dataset were not explicitly found in the retrieved documents. Commonly, BLEU is a standard metric for such evaluations. | BLEU_score => 0.5
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset using the PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index) metrics for the Image Super-Resolution task. | PSNR => 0.5
+Agent57 achieves the highest Medium Human-Normalized Score on the Atari-57 dataset for Atari Games. | Ape-X => 0.0
+The Subgraph_embeddings method for the WebQuestions dataset in the Question Answering task is evaluated using a scoring function S(q, a) that generates a high score if a is the correct answer to the question q, and a low score otherwise. This involves learning low-dimensional vector embeddings of words in questions and entities and relation types in Freebase, ensuring that representations of questions and their corresponding answers are close in the joint embedding space. | F1 => 0.0
+The DANN method is evaluated on the Multi-Domain Sentiment Dataset using classification accuracy as the primary metric. The dataset includes Amazon reviews across four domains: books, DVDs, electronics, and kitchen appliances. The evaluation involves 12 domain adaptation tasks, with accuracy measured on separate target test sets. | Average, Books, DVD, Electronics, Kitchen => 0.0
+The TARNet method for causal inference is evaluated on datasets such as the semi-synthetic IHDP dataset and the Jobs dataset, which includes both randomized and non-randomized components. | IDHP => 0.5
+Frustum_PointNets method is evaluated on KITTI and SUN RGB-D datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using the Average Precision (AP) at 50% Intersection-over-Union (IoU) and CorLoc metrics. AP measures the precision of detected boxes against ground truth, while CorLoc measures the percentage of images with at least one correctly localized object. | MAP => 0.5
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task according to the available information. It is primarily evaluated on visual recognition datasets. | IWSLT2015_German-English => 0.0
+The CNN Bi-RNN CTC speech to letters method is evaluated using the Word Error Rate (WER) metric on the swb_hub_500_WER_fullSWBCH dataset for the Speech Recognition task. However, specific details about additional metrics used in the evaluation were not found in the available resources. | Percentage_error => 1.0
+The DDQN__tuned__noop method is evaluated on the Atari 2600 suite of games, which includes a diverse set of games used for benchmarking reinforcement learning algorithms. | Atari_2600_Berzerk => 0.0
+Unable to find specific information on the highest AP_0_5 score for the PASCAL-Person-Part dataset in the Multi-Human Parsing task. Consider checking recent publications or specific research papers for the latest results. | NAN => 1.0
+The DDQN__tuned__hs method evaluation datasets for Atari Games were not specifically found in the retrieved documents. The search did not yield direct information about the datasets used for evaluating the DDQN__tuned__hs method on Atari Games. | Atari_2600_Assault => 0.0
+The specific datasets used to evaluate the Sample_Clustering method for Few-Shot Image Classification were not found in the search results. It is possible that the information is not readily available or the method is not widely documented in the context of specific datasets. | CUB-200_-_0-Shot_Learning => 0.0
+The datasets on which the PFF method is evaluated for Image Super-Resolution are not explicitly mentioned in the available resources. Further specific information might be required from the original paper or related publications. | Set14_-_4x_upscaling => 0.0
+The A3C-CTS method is evaluated on various Atari 2600 games, but specific datasets or games used for evaluation were not found in the retrieved documents. The method generally uses the Arcade Learning Environment (ALE) for evaluation, which includes a suite of Atari 2600 games. | Atari_2600_Venture => 0.5
+The Mult-DAE method for collaborative filtering on the Netflix dataset is typically evaluated using metrics such as NDCG (Normalized Discounted Cumulative Gain), RMSE (Root Mean Squared Error), and MAE (Mean Absolute Error). These metrics help in assessing the accuracy and ranking quality of the recommendations. | Recall_20, Recall_50 => 0.0
+The Duel_hs method evaluation datasets for the Atari Games task were not found in the available resources. | Atari_2600_Video_Pinball => 0.0
+
+Evaluation Metrics Report
+========================
+Execution Time: 175.71 seconds
+Total Tokens: 178,411 (1,090 in, 177,321 out)
+Total Cost: $1.7759
+Average Score: 0.212
+Average Score: 0.2125
+Evaluation Cost: $1.7759
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. Begin by implementing a more robust pre-processing step to interpret and refine the query, breaking it down into simpler components if necessary. This will help in aligning the query with the most suitable tools. For specific queries related to academic papers or datasets, prioritize using the `ARXIV_SEARCH` and `RETRIEVE` tools. These tools are effective for gathering precise information. Use the `WEB_SEARCH` tool for broader queries only when necessary, ensuring that the query is as specific as possible to improve the precision of the results.
+
+To enhance performance on negative inputs, integrate additional databases or APIs that specialize in niche areas relevant to the queries. This could involve partnerships with academic institutions or leveraging open data initiatives, thereby expanding the data sources available to the tools. Develop a more nuanced strategy for tool selection by considering the specificity and nature of the query. For instance, if the query is about a well-documented dataset or method, use `ARXIV_SEARCH` or `RETRIEVE` to gather information and confirm it with a `WEB_SEARCH` if needed. For less common or broad queries, refine the query to make it more specific or consider expanding the data sources available to the tools.
+
+Introduce a feedback loop to learn from past queries and results, enhancing future tool selection and query handling. This adaptive approach can be achieved through machine learning techniques, allowing the system to refine its strategy based on success rates. Additionally, provide users with guidance on how to structure their queries to improve the chances of retrieving accurate information. This could involve suggesting keywords or query structures that align well with the available tools. By incorporating these strategies, you can improve performance on negative inputs, leading to more consistent and accurate results across a wider range of queries.
+Processing examples:   0%|          | 0/40 [00:00<?, ?it/s]Processing examples:   2%|▎         | 1/40 [00:07<04:35,  7.07s/it]The method 'Past Decode Regularization (PDR)' achieves a word level perplexity of 53.8 on the Penn Treebank dataset for language modeling, which is a state-of-the-art result. | Tied_Variational_LSTM___augmented_loss => 0.0
+OmniPose achieves the highest PCK score of 99.5% on the Leeds Sports Poses dataset for the Pose Estimation task. | Pyramid_Residual_Modules__PRMs_ => 0.0
+The method that achieves the highest PSNR score on the Set14 4x upscaling dataset for Image Super-Resolution is DRCT-L with a PSNR of 29.54. | PFF => 0.0
+The method achieving the highest F1 score on the OntoNotes dataset for the Semantic Role Labeling task is HeSyFu with an F1 score of 88.59. | Li_et_al_ => 0.0
+The method that achieves the highest SSIM score on the Vid4 - 4x upscaling dataset for Video Super-Resolution is EvTexture+ with an SSIM score of 0.8983. | VESPCN => 0.0
+The method achieving the highest score on the Atari 2600 Road Runner dataset for the Atari Games task is GDI-H3. | Duel_noop => 0.0
+The BiDAF Self Attention single model method is evaluated on the Stanford Question Answering Dataset (SQuAD). | SQuAD1_1 => 0.5
+The ByteNet method is evaluated on the English-to-German WMT translation task for the Machine Translation task. | WMT2014_English-French => 0.0
+The highest BLEU score on the WMT2014 English-German dataset for the Machine Translation task is 28.4, achieved by a model in 2023. | Weighted_Transformer__large_ => 0.0
+The IQN method is evaluated on 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Kung-Fu_Master => 0.5
+The method achieving the highest MRR score on the FB15k dataset for the Link Prediction task is AutoKGE with an MRR of 0.861. | TuckER => 0.0
+The Frustum_PointNets method is evaluated on the KITTI and SUN RGB-D datasets for the Object Localization task. | KITTI_Cars_Hard => 0.5
+The LapSRN method is evaluated on the Urban100 - 4x upscaling dataset using metrics such as PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index). | PSNR => 0.5
+The MTGAE method is evaluated on the Pubmed dataset for the Link Prediction task using the MRR (Mean Reciprocal Rank) metric, achieving a relative improvement of 18.82%. | Accuracy => 0.0
+The LISA method achieves the highest F1 score for the Predicate_Detection task on the COLX 563 dataset, with scores above 97 F1. | CoNLL_2005 => 0.0
+The Transformer method for the IWSLT2015 German-English dataset in the Machine Translation task is typically evaluated using metrics such as BLEU, METEOR, and TER. However, specific metrics used in the context of the IWSLT2015 dataset were not explicitly found in the search results. | BLEU_score => 0.5
+The specific evaluation metrics for the ResNet_ELU method on the CIFAR-100 dataset for Image Classification were not found in the available resources. It is recommended to check the original paper or related publications for detailed information on the evaluation metrics used. | Percentage_correct => 0.0
+The MT-DNN method is evaluated on the MultiNLI dataset using classification accuracy as the evaluation metric for the Natural Language Inference task. | Matched, Mismatched => 0.0
+The IDE_CamStyle method for Person Re-Identification is evaluated on the Market-1501 and DukeMTMC-reID datasets. | DukeMTMC-reID => 0.5
+The OICR-Ens___FRCNN method is evaluated on the PASCAL_VOC_2012 dataset for the Weakly Supervised Object Detection task using the Average Precision (AP) at 50% Intersection-over-Union (IoU) and CorLoc metrics. AP measures the precision of detected boxes against ground truth, while CorLoc measures the percentage of images with at least one correctly localized object. | MAP => 0.5
+The Bi-LSTM model trained on the FCE dataset achieves the highest F0.5 score for the Grammatical Error Detection task when using the FCE-public dataset, as additional datasets like NUCLE did not improve performance due to domain differences. | CoNLL-2014_A2 => 0.0
+DeepFM achieves the highest Log_Loss score for Click-Through Rate Prediction on the Criteo dataset. | Criteo => 1.0
+The DANN method is evaluated on the Multi-Domain Sentiment Dataset using classification accuracy as the primary metric. The dataset includes Amazon reviews from four domains: books, DVDs, electronics, and kitchen appliances. The evaluation involves 12 domain adaptation tasks, with DANN showing significantly better performance compared to a standard neural network and a Support Vector Machine, as indicated by the Poisson binomial test. | Average, Books, DVD, Electronics, Kitchen => 0.0
+The DDQN__tuned__noop method is evaluated on 57 Atari games, using both noop and human start settings. The evaluation includes mean and median human normalized scores across all games, comparing the method against other state-of-the-art algorithms like DQN, Double DQN, and Rainbow. | Atari_2600_Berzerk => 0.0
+The Duel_noop method is evaluated on 57 Atari games, including a subset of games like Assault, Asterix, Breakout, Demon Attack, Double Dunk, Gopher, Phoenix, Stargunner, Up’n Down, and Video Pinball. The evaluation involves both noop starts and random human starts. | Atari_2600_Ms__Pacman => 0.0
+The DCCL method is not specifically evaluated on datasets for the Machine Translation task. The available information does not mention any specific datasets used for evaluating DCCL in the context of Machine Translation. | IWSLT2015_German-English => 0.0
+The Subgraph_embeddings method for the Question Answering task on the WebQuestions dataset is evaluated using a scoring function S(q, a) that measures the closeness of the embeddings of questions and their corresponding answers in a joint embedding space. The method involves learning low-dimensional vector embeddings of words, entities, and relation types from Freebase, and the evaluation is based on the performance of these embeddings in accurately answering questions. | F1 => 0.0
+The PSENet-1s method is evaluated on the SCUT-CTW1500 dataset using precision, recall, and F-measure metrics. PSENet-1s achieves a precision of 82.50%, recall of 79.89%, and an F-measure of 81.17%, significantly outperforming other methods in detecting curved or arbitrarily shaped texts. | F-Measure => 1.0
+Agent57 achieves the highest Medium Human-Normalized Score on the Atari-57 dataset for Atari Games. | Ape-X => 0.0
+The TARNet method for causal inference is evaluated on datasets such as the semi-synthetic IHDP dataset and the Jobs dataset, which includes both randomized and non-randomized components. | IDHP => 0.5
+Processing examples:   5%|▌         | 2/40 [01:19<28:51, 45.56s/it]The Duel_noop method is evaluated on 57 Atari games, using both human and noop start settings. The evaluation includes mean and median human normalized scores, mean rank, and Elo scores across all games. | Atari_2600_Time_Pilot => 0.0
+The method achieving the highest AP_0_5 score on the PASCAL-Person-Part dataset for the Multi-Human Parsing task is NAN with a score of 59.70%. | NAN => 0.5
+The CornerNet-Squeeze method is evaluated on the PASCAL VOC and MS COCO datasets for the Real-Time Object Detection task. | COCO => 0.5
+The datasets on which the Sample_Clustering method is evaluated for Few-Shot Image Classification could not be found in the available resources. | CUB-200_-_0-Shot_Learning => 0.0
+Processing examples:  15%|█▌        | 6/40 [01:31<07:14, 12.78s/it]Processing examples:  18%|█▊        | 7/40 [01:34<05:48, 10.58s/it]Processing examples:  30%|███       | 12/40 [02:27<04:56, 10.59s/it]Processing examples:  57%|█████▊    | 23/40 [3:21:12<3:22:30, 714.72s/it]Processing examples:  88%|████████▊ | 35/40 [3:39:49<33:22, 400.50s/it]  Processing examples: 100%|██████████| 40/40 [3:39:49<00:00, 329.74s/it]
+The Duel_hs method evaluation datasets for the Atari Games task could not be found in the available resources. Further specific details might be required or the method might not be widely documented in the current databases. | Atari_2600_Video_Pinball => 0.0
+The search did not yield specific results for the PFF method evaluation datasets in Image Super-Resolution. It seems that the PFF method might not be well-documented in the available resources. Further investigation or a more specific query might be needed. | Set14_-_4x_upscaling => 0.0
+The DDQN__tuned__hs method is evaluated on 57 Atari games. | Atari_2600_Assault => 0.0
+The CNN___Bi-RNN___CTC__speech_to_letters___25_9__WER_if_trainedonlyon_SWB method is evaluated using the Word Error Rate (WER) metric on the swb_hub_500_WER_fullSWBCH dataset for the Speech Recognition task. | Percentage_error => 1.0
+Error code: 400 - {'error': {'message': "This model's maximum context length is 128000 tokens. However, you requested 128170 tokens (124170 in the messages, 4000 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Error code: 400 - {'error': {'message': "This model's maximum context length is 128000 tokens. However, you requested 128149 tokens (124149 in the messages, 4000 in the completion). Please reduce the length of the messages or completion.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+
+Evaluation Metrics Report
+========================
+Execution Time: 13192.20 seconds
+Total Tokens: 115,678 (1,042 in, 114,636 out)
+Total Cost: $1.1490
+Average Score: 0.200
+Average Score: 0.2
+Evaluation Cost: $1.1490
+Generated new instruction: New Instruction: You will be given `Tools`, which is a list of resources to use to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. Begin by implementing a more robust pre-processing step to interpret and refine the query, breaking it down into simpler components if necessary. This will help in aligning the query with the most suitable tools and improve the precision of the results. For specific queries related to academic papers or datasets, prioritize using the `ARXIV_SEARCH` and `RETRIEVE` tools, as they are more effective for gathering precise information compared to `WEB_SEARCH`. Use the `WEB_SEARCH` tool for broader queries only when necessary, ensuring that the query is as specific as possible to improve the precision of the results.
+
+Develop a nuanced strategy for tool selection by considering the specificity and nature of the query. For instance, if the query is about a well-documented dataset or method, use `ARXIV_SEARCH` or `RETRIEVE` to gather information and confirm it with a `WEB_SEARCH` if needed. For less common or broad queries, refine the query to make it more specific or consider expanding the data sources available to the tools. This could involve integrating additional databases or APIs that specialize in niche areas relevant to the queries, thereby improving the chances of retrieving accurate information. Encourage the use of more specific and detailed queries to improve the chances of retrieving accurate information, specifying the exact dataset, method, or metric of interest in the query.
+
+Introduce a feedback loop to learn from past queries and results, enhancing future tool selection and query handling. This adaptive approach can be achieved through machine learning techniques, allowing the system to refine its strategy based on success rates. By incorporating these strategies, you can improve performance on negative inputs, leading to more consistent and accurate results across a wider range of queries.
+
+                Optimization Process Metrics
+                ==========================
+                Total Execution Time: 13778.93 seconds
+                Evaluation Time: 13688.71 seconds
+                Total API Calls: 8
+                - Comparator calls: 4
+                - Feedback instruction calls: 4
+
+                Token Usage:
+                ----------
+                Total Tokens: 256,218
+                - Input tokens: 252,812
+                - Output tokens: 3,406
+
+                Cost Analysis:
+                ------------
+                Estimated Total Cost: $7.7887
+                
+Processing batch 1 of 2...
+Processing examples:   0%|          | 0/60 [00:00<?, ?it/s]The method TANDA achieves the highest MAP score on the WikiQA dataset for the Question Answering task, with a MAP score of 92%. | Key-Value_Memory_Network => 0.0
+The TuckER method is evaluated on standard link prediction datasets, including FB15K-237 and WN18RR. | FB15k-237 => 0.5
+The method 'RankPose' achieves the highest MAE score on the BIWI dataset for the Head Pose Estimation task, reducing the MAE from 4.0 to 3.71. | 3DDFA => 0.0
+The method that achieves the highest Mean IoU score on the CamVid dataset for the Semantic Segmentation task is SERNet-Former, with a Mean IoU of 84.62%. | PSPNet => 0.5
+The ConvNet method for Keypoint Detection on the Pascal3D dataset is evaluated using the Percentage of Correct Keypoints (PCK) metric. This metric measures the accuracy of keypoint predictions by determining if the predicted keypoint is within a certain distance threshold from the true keypoint. | Mean_PCK => 1.0
+The method achieving the highest Number_of_params score on the WikiText-2 dataset for the Language Modelling task is the adversarial training mechanism proposed by Dilin Wang, Chengyue Gong, and Qiang Liu, which achieved a test perplexity score of 38.07. | AWD-LSTM-DOC => 0.0
+The method achieving the highest error score on the Yelp Binary classification dataset for Sentiment Analysis is a shallow-and-wide network with word inputs, which establishes a state-of-the-art performance of 95.9% accuracy. | Char-level_CNN => 0.0
+The highest F1 score achieved on the CoNLL-2003 English dataset for Named Entity Recognition (NER) is 85.11%. | CVT___Multi-Task => 0.0
+The Deep Speech method is evaluated on datasets such as TIMIT, Wall Street Journal (WSJ), and LibriSpeech for the Speech Recognition task. | Switchboard___Hub500 => 0.0
+The method achieving the highest accuracy score on the Cora dataset for the node classification task is the Graph-Learning-Dual Graph Convolutional Neural Network (GLDGCN), as it is reported to achieve higher classification accuracy compared to baseline methods. | GCN => 0.0
+Processing examples:   2%|▏         | 1/60 [02:04<2:01:57, 124.02s/it]EffNet-L2 (SAM) achieves the highest Percentage_correct score of 96.08 on the CIFAR-100 dataset for Image Classification. | Res2NeXt-29 => 0.0
+The NICE method for image generation on the CIFAR-10 dataset is evaluated using metrics such as the Inception Score (IS) and the Fréchet Inception Distance (FID). These metrics assess the quality and diversity of the generated images. | NLL_Test => 0.0
+The Paragraph_vector__lexical_overlap___dist_output_ method on the QASent dataset for Question Answering is evaluated using metrics like EM (Exact Match) and F1 score, which are common for question answering tasks. However, specific metrics for this method on the QASent dataset were not found in the search results. | MAP, MRR => 0.0
+The Field-gating Seq2seq dual attention method for the Table-to-text Generation task on the WikiBio dataset is evaluated using metrics such as BLEU, ROUGE, and PARENT. | BLEU, ROUGE => 0.5
+The FRCN method has been evaluated on datasets such as the PASCAL Visual Object Classes challenges and the ILSVRC ImageNet dataset for object detection tasks. Additionally, it has been mentioned in the context of the MSCOCO dataset and other remote sensing datasets like RSOD and DIOR. | PASCAL_VOC_2007 => 0.5
+The current state-of-the-art on the SNLI dataset for Natural Language Inference is achieved by Neural Tree Indexers for Text Understanding. However, specific details about the highest Parameters score are not readily available from the search results. | 300D_Residual_stacked_encoders => 0.0
+The search did not yield specific datasets for the VAT_EntMin method in Semi-Supervised Image Classification. Further investigation in specialized academic papers or contacting authors directly might be necessary. | CIFAR-10__4000_Labels => 0.0
+The Impatient_Reader method is evaluated on the CNN/Daily Mail dataset for the Question Answering task with a performance score of 63.8. However, specific evaluation metrics such as precision, recall, or F1 score were not found in the available resources. | CNN, Daily_Mail => 0.0
+The CRN method for the Image-to-Image Translation task is evaluated on datasets such as Cityscapes and GTA5. However, specific details about the CRN method's evaluation on these datasets were not found in the search results. | ADE20K-Outdoor_Labels-to-Photos => 0.0
+The S-Norm method evaluation datasets for the Question Answering task could not be identified from the available resources. Further specific information about the S-Norm method might be required to locate the relevant datasets. | TriviaQA => 0.0
+The highest Train_Accuracy score on the SNLI dataset for the Natural Language Inference task is not explicitly found in the search results. However, models like ESIM have achieved high accuracy scores around 88% on the SNLI dataset. For the most current and specific Train_Accuracy scores, checking the latest papers or repositories on platforms like arXiv or GitHub might be necessary. | __Unigram_and_bigram_features => 0.0
+The PNN method is evaluated using metrics such as Area under ROC Curve (AUC) and Relative Information Gain (RIG) for response prediction accuracy on the Bing_News dataset for the Click-Through Rate Prediction task. | AUC, Log_Loss => 0.5
+Bootstrapped DQN is evaluated on several Atari games, including Amidar, Beam Rider, Battle Zone, Frostbite, and Montezuma’s Revenge. It generally outperforms DQN in terms of learning speed and final scores across most games, although it does not reach human performance on all games. | Atari_2600_Montezuma_s_Revenge => 0.5
+MuZero achieves the highest score on the Atari 2600 Name This Game dataset for the Atari Games task. | IQN => 0.0
+LiteFlowNet achieves the highest Average End-Point Error score for Optical Flow Estimation on the Sintel final pass and KITTI benchmarks. | Sintel-final => 0.5
+The CyCADA method is evaluated on the SYNTHIA Fall-to-Winter dataset for the Image-to-Image Translation task using semantic segmentation metrics, such as mean Intersection over Union (mIoU), which is a common metric for evaluating the performance of segmentation models. | Per-pixel_Accuracy, fwIOU, mIoU => 0.5
+The IQN method achieves the highest Score score on the dataset of 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Atlantis => 0.0
+The FDNet method is evaluated on the WIDER Face Easy dataset using the metric of Average Precision (AP). It achieves an AP of 95.9% on the Easy set. | AP => 1.0
+The 300D_NTI-SLSTM-LSTM_encoders method for Natural Language Inference is evaluated on the Stanford Natural Language Inference (SNLI) dataset and the MultiGenre Natural Language Inference (MultiNLI) dataset. | SNLI => 0.5
+The IDE CamStyle Random Erasing method for Person Re-Identification is evaluated on the following datasets: Market-1501, DukeMTMC-reID, and CUHK03. | Market-1501 => 0.5
+The U-Net method for Skin Cancer Segmentation has been evaluated on several datasets, including the ISIC-2018 dataset and the HAM10000 dataset. These datasets are commonly used for benchmarking segmentation tasks in skin cancer research. | Kaggle_Skin_Lesion_Segmentation => 0.0
+The DeepMatching method is evaluated on the HPatches dataset for Dense Pixel Correspondence Estimation using a metric based on the number of correctly matched pixels compared to the overall number of pixels. This is referred to as 'accuracy@', where a pixel is considered correct if its match in the second image is closer than a certain threshold to the ground truth. | Viewpoint_I_AEPE, Viewpoint_II_AEPE, Viewpoint_III_AEPE, Viewpoint_IV_AEPE, Viewpoint_V_AEPE => 0.0
+The SRCNN method is evaluated on the Manga109 - 4x upscaling dataset using metrics such as Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM). | PSNR, SSIM => 1.0
+The MemNNs ensemble method is evaluated on the bAbI dataset for text-based question answering and the NLVR dataset for visual question answering. | CNN___Daily_Mail => 0.0
+The Transformer method for machine translation has been evaluated on datasets such as the WMT 2014 English-to-German and English-to-French translation tasks. These datasets are commonly used benchmarks in the field of machine translation. | IWSLT2015_English-German => 0.0
+The DPN-131 method for Image Classification has been evaluated on several datasets, including the ImageNet-1k dataset and the Places365-Standard dataset. These evaluations demonstrate the method's superior accuracy and efficiency compared to other models. | ImageNet => 0.5
+The Snips method for Speech Recognition is evaluated on datasets such as the Fluent Speech Commands, Snips SmartLights datasets, and the TIMIT Acoustic-Phonetic Continuous Speech Corpus. | LibriSpeech_test-clean => 0.0
+The Ann_PAT_MT method evaluation metrics on the CoNLL-2014_A2 dataset for the Grammatical Error Detection task are not explicitly mentioned in the retrieved documents. However, common evaluation metrics for grammatical error detection tasks include precision, recall, and F0.5 score, which weights precision twice as much as recall. These metrics are typically used to assess the performance of systems in detecting grammatical errors. | F0_5 => 0.0
+The 3DDFA method is evaluated on the Florence dataset for the 3D Face Reconstruction task using metrics such as geometric error between reconstructed meshes and the ground truth. This is a standard benchmark metric for 3D face reconstruction. | Mean_NME_ => 0.0
+Processing examples:   7%|▋         | 4/60 [02:21<26:17, 28.17s/it]   Processing examples:  13%|█▎        | 8/60 [02:45<12:48, 14.78s/it]Processing examples:  18%|█▊        | 11/60 [03:12<10:07, 12.40s/it]Processing examples:  45%|████▌     | 27/60 [03:45<02:34,  4.67s/it]Processing examples: 100%|██████████| 60/60 [03:45<00:00,  3.76s/it]
+Inception_V2 is evaluated on the ImageNet dataset using top-1 and top-5 error rates as metrics for the Image Classification task. | Top_1_Accuracy, Top_5_Accuracy => 1.0
+The iBOWIMG_baseline method achieves the highest Percentage_correct score on the COCO VQA dataset for the Visual Question Answering task. | COCO_Visual_Question_Answering__VQA__real_images_1_0_multiple_choice => 0.5
+MuZero achieves the highest score on the Atari 2600 Robotank dataset for the Atari Games task. | Bootstrapped_DQN => 0.0
+The AWD-LSTM-DOC method is evaluated on the WikiText-2 dataset for the Language Modelling task primarily using the metric of perplexity. Dynamic evaluation is used to improve the state-of-the-art perplexity on this dataset, indicating its effectiveness in exploiting regularities across non-shuffled documents. | Number_of_params, Test_perplexity, Validation_perplexity => 0.5
+The method "Discriminative Unsupervised Feature Learning with Convolutional Neural Networks" is evaluated on the following datasets for the Image Classification task: STL-10, CIFAR-10, and Caltech-101. | CIFAR-10 => 0.5
+The 'Discriminative Unsupervised Feature Learning with Convolutional Neural Networks' method is evaluated on several popular datasets for the Image Classification task, including STL-10, CIFAR-10, and Caltech-101. | STL-10 => 0.5
+The Stacked Hourglass Networks achieve state-of-the-art results on the MPII and FLIC datasets for human pose estimation, but specific PCK_0_2 scores were not found in the available resources. | FLIC_Elbows => 0.0
+The SPyNet method for Optical Flow Estimation is evaluated on the MPI-Sintel and KITTI datasets. | Sintel-final => 0.5
+The VGG_Resnet_LACE_BiLSTM_acoustic_model trained on SWB Fisher CH N-gram RNNLM language model is evaluated on the TIMIT Acoustic-Phonetic Continuous Speech Corpus for the Speech Recognition task. | swb_hub_500_WER_fullSWBCH => 0.0
+Unable to find specific evaluation metrics for the Prior_Duel_hs method on the Atari_2600_Alien dataset for the Atari_Games task. Consider checking specific academic papers or datasets related to this method for detailed information. | Score => 0.0
+The ACF-WIDER method achieves the highest AP score on the WIDER FACE dataset for the Face Detection task. | WIDER_Face__Easy_ => 0.0
+The SVDCNN method for text classification is evaluated on datasets that are not explicitly mentioned in the retrieved documents. The focus of the research is on modifying the VDCNN model to fit mobile platform constraints while maintaining performance, but specific datasets used for evaluation are not detailed in the available summaries. | AG_News => 0.0
+The highest Recall_50 score for the Collaborative Filtering task on the Million Song Dataset is not explicitly available in the current resources. The available information suggests that the top contestants in the Million Song Dataset Challenge reached a plateau around a 0.15 mean average precision score, but specific Recall_50 scores are not detailed. | Mult-VAE_PR => 0.0
+Unable to find specific information on the SVDCNN method achieving the highest error score for a Sentiment Analysis dataset. Further research or specific sources may be needed. | Yelp_Fine-grained_classification => 0.0
+The Paragraph Vector method has been evaluated on several datasets for the Question Answering task, including SQuAD, SelQA, WikiQA, NewWikiQA, and InforBoxQA. | WikiQA => 0.5
+The DDQN__tuned__noop method achieves the highest Score score on the Atari 2600 Breakout dataset with a score of 418.5. | Atari_2600_Video_Pinball => 0.0
+The SRCNN method for Video Super-Resolution is evaluated on the REDS VTSR dataset, as mentioned in the AIM 2019 Challenge on Video Temporal Super-Resolution paper. | Vid4_-_4x_upscaling => 0.0
+The DQN_noop method is evaluated on the Atari 2600 suite of games, which includes a variety of games such as Montezuma's Revenge, Pong, and others. The evaluation typically involves using both noop and human start conditions to assess performance across different initial states. | Atari_2600_River_Raid => 0.0
+The DQN_hs method evaluation on Atari Games datasets could not be specifically identified from the available resources. The search did not yield direct results for DQN_hs, indicating it might not be a widely recognized or documented method in the context of Atari Games. Further investigation or clarification on the method's specifics might be necessary. | Atari_2600_Chopper_Command => 0.0
+The DRCN method for Image Super-Resolution on the Set5 dataset with 4x upscaling is typically evaluated using metrics such as Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM). | MOS, PSNR, SSIM => 0.67
+The specific evaluation metrics for DeepLab-LargeFOV on the SUN-RGBD dataset for scene segmentation were not found in the search results. Typically, such methods are evaluated using metrics like mean Intersection over Union (mIoU) and pixel accuracy, but specific confirmation for DeepLab-LargeFOV on SUN-RGBD is missing. | Mean_IoU => 0.5
+Processing batch 2 of 2...
+Processing examples:   0%|          | 0/60 [00:00<?, ?it/s]The method TANDA achieves the highest MAP score on the WikiQA dataset for the Question Answering task, with a MAP score of 92%. | Key-Value_Memory_Network => 0.0
+The method achieving the highest Number_of_params score on the WikiText-2 dataset for the Language Modelling task is the adversarial training mechanism proposed by Dilin Wang, Chengyue Gong, and Qiang Liu, which achieved a test perplexity score of 38.07. | AWD-LSTM-DOC => 0.0
+The highest F1 score achieved on the CoNLL-2003 English dataset for Named Entity Recognition (NER) is 85.11%. | CVT___Multi-Task => 0.0
+The method achieving the highest error score on the Yelp Binary classification dataset for Sentiment Analysis is a shallow-and-wide network with word inputs, which establishes a state-of-the-art performance of 95.9% accuracy. | Char-level_CNN => 0.0
+Processing examples:   2%|▏         | 1/60 [00:31<31:05, 31.61s/it]MuZero achieves the highest score on the Atari 2600 Name This Game dataset for the Atari Games task with a score of 157177.85. | IQN => 0.0
+The method achieving the highest accuracy score on the Cora dataset for the node classification task is the Graph-Learning-Dual Graph Convolutional Neural Network (GLDGCN), as it is reported to achieve higher classification accuracy compared to baseline methods. | GCN => 0.0
+The method 'RankPose' achieves the highest MAE score on the BIWI dataset for the Head Pose Estimation task, reducing the MAE from 4.0 to 3.71. | 3DDFA => 0.0
+The TuckER method is evaluated on standard link prediction datasets, including FB15K-237 and WN18RR. | FB15k-237 => 0.5
+The method that achieves the highest Mean IoU score on the CamVid dataset for the Semantic Segmentation task is SERNet-Former, with a Mean IoU of 84.62%. | PSPNet => 0.5
+EffNet-L2 (SAM) achieves the highest Percentage_correct score of 96.08 on the CIFAR-100 dataset for Image Classification. | Res2NeXt-29 => 0.0
+The Deep Speech method is evaluated on several datasets for the Speech Recognition task, including the TIMIT Acoustic-Phonetic Continuous Speech Corpus, Wall Street Journal (WSJ), and LibriSpeech datasets. | Switchboard___Hub500 => 0.0
+The method that achieves the highest score on the Atari 2600 Robotank dataset for the Atari Games task is MuZero, with a score of 131.13. | Bootstrapped_DQN => 0.0
+Processing examples:   3%|▎         | 2/60 [01:52<58:24, 60.42s/it]Processing examples:   7%|▋         | 4/60 [02:04<24:31, 26.27s/it]The ConvNet method for Keypoint Detection on the Pascal3D dataset is evaluated using the Percentage of Correct Keypoints (PCK) metric. This metric is commonly used to validate the performance of keypoint detection models. | Mean_PCK => 0.5
+The Field-gating Seq2seq dual attention method for the Table-to-text Generation task on the WikiBio dataset is evaluated using BLEU, ROUGE, and PARENT metrics. | BLEU, ROUGE => 0.5
+The U-Net method for Skin Cancer Segmentation has been evaluated on several datasets, including the ISIC-2018 dataset and the HAM10000 dataset. These datasets are commonly used for benchmarking segmentation tasks in skin cancer research. | Kaggle_Skin_Lesion_Segmentation => 0.0
+The Paragraph_vector__lexical_overlap___dist_output_ method on the QASent dataset for the Question Answering task is evaluated using metrics like EM (Exact Match) and F1 score, which are common for question answering systems. However, specific metrics for this method on the QASent dataset were not found in the search results. | MAP, MRR => 0.0
+The FRCN method is evaluated on several datasets for the Object Detection task, including the MSCOCO dataset, which is a popular benchmark for evaluating object detection models. Other datasets mentioned in various studies include RSOD, DIOR, and Google Open Images Dataset V4. | PASCAL_VOC_2007 => 0.0
+The method "Discriminative Unsupervised Feature Learning with Convolutional Neural Networks" is evaluated on the following datasets for the Image Classification task: STL-10, CIFAR-10, and Caltech-101. | CIFAR-10 => 0.5
+The NICE method for image generation on the CIFAR-10 dataset is evaluated using metrics such as the Inception Score (IS) and the Fréchet Inception Distance (FID). | NLL_Test => 0.0
+The Spynet method for Optical Flow Estimation is evaluated on datasets such as MPI Sintel and Flying Chairs. | Sintel-final => 0.5
+The IDE CamStyle Random Erasing method for Person Re-Identification is evaluated on the following datasets: Market-1501, DukeMTMC-reID, and CUHK03. | Market-1501 => 0.5
+Unable to find specific evaluation metrics for the Prior_Duel_hs method on the Atari_2600_Alien dataset for the Atari_Games task. Consider checking specific research papers or contacting authors for detailed information. | Score => 0.0
+The MemNNs ensemble method is evaluated on the bAbI dataset for text-based question answering and the NLVR dataset for visual question answering. | CNN___Daily_Mail => 0.0
+The highest Train_Accuracy score on the SNLI dataset for Natural Language Inference was not found in the available resources. The search results primarily provided accuracy scores, but not specifically the Train_Accuracy. Further investigation or access to specific model training results might be necessary. | __Unigram_and_bigram_features => 0.0
+The SRCNN method is evaluated on the Manga109 - 4x upscaling dataset for Image Super-Resolution using metrics such as Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM). | PSNR, SSIM => 1.0
+The specific evaluation metrics for the DeepLab-LargeFOV method on the SUN-RGBD dataset for the Scene Segmentation task were not found in the available resources. Typically, such methods are evaluated using metrics like Mean Intersection over Union (mIoU), Pixel Accuracy, and Boundary F1 Score, but confirmation for this specific case was not retrieved. | Mean_IoU => 0.0
+The PNN method is evaluated on the Bing_News dataset for Click-Through Rate Prediction using metrics such as Area under ROC Curve (AUC) and Relative Information Gain (RIG). | AUC, Log_Loss => 0.5
+The 3DDFA method is evaluated on the Florence dataset for 3D Face Reconstruction using metrics such as geometric error between reconstructed meshes and the ground truth. This involves both qualitative and quantitative comparisons to assess the method's performance. | Mean_NME_ => 0.0
+The SVDCNN method for text classification is evaluated on datasets such as AG News, DBpedia, Yelp Review Polarity, and Yahoo Answers. These datasets are commonly used for benchmarking text classification models. | AG_News => 0.5
+The CRN method for Image-to-Image Translation does not have specific datasets clearly identified in the available resources. However, common datasets for such tasks include Cityscapes and GTA5, but there is no direct evidence of CRN's evaluation on these datasets. | ADE20K-Outdoor_Labels-to-Photos => 0.0
+Bootstrapped DQN is evaluated on several Atari games, including Amidar, Beam Rider, Battle Zone, Frostbite, and Montezuma’s Revenge. It generally outperforms DQN in terms of learning speed and final scores across most games, although it does not reach human performance on all games. | Atari_2600_Montezuma_s_Revenge => 0.5
+The ACF-WIDER method achieves the highest AP score for the Face Detection task on the WIDER FACE dataset. | WIDER_Face__Easy_ => 0.0
+The AWD-LSTM-DOC method is evaluated on the WikiText-2 dataset for the Language Modelling task primarily using the metric of perplexity. Dynamic evaluation is used to improve the state-of-the-art perplexity on this dataset, indicating its effectiveness in exploiting regularities across non-shuffled documents. | Number_of_params, Test_perplexity, Validation_perplexity => 0.5
+The VGG_Resnet_LACE_BiLSTM_acoustic_model trained on SWB Fisher CH N-gram RNNLM language model is evaluated on the TIMIT Acoustic-Phonetic Continuous Speech Corpus for the Speech Recognition task. | swb_hub_500_WER_fullSWBCH => 0.0
+The S-Norm method for the Question Answering task has been evaluated on datasets such as SQuAD, SelQA, WikiQA, NewWikiQA, and InforBoxQA. | TriviaQA => 0.0
+The method "Discriminative Unsupervised Feature Learning with Convolutional Neural Networks" is evaluated on the following datasets for the Image Classification task: STL-10, CIFAR-10, and Caltech-101. | STL-10 => 0.5
+The DPN-131 method for Image Classification has been evaluated on several datasets, including the ImageNet-1k dataset and the Places365-Standard dataset. These evaluations demonstrate the method's superior accuracy and efficiency compared to other models. | ImageNet => 0.5
+The Snips method for Speech Recognition is evaluated on datasets such as the Fluent Speech Commands, Snips SmartLights datasets, and the TIMIT Acoustic-Phonetic Continuous Speech Corpus. | LibriSpeech_test-clean => 0.0
+The FDNet method is evaluated on the WIDER Face Easy dataset using the metric of Average Precision (AP), achieving a score of 95.9% on the easy set. | AP => 1.0
+LiteFlowNet achieves the highest Average End-Point Error score for Optical Flow Estimation on the Sintel final pass and KITTI benchmarks. | Sintel-final => 0.5
+The Transformer method for machine translation has been evaluated on datasets such as the WMT 2014 English-to-German and English-to-French translation tasks. These datasets are commonly used benchmarks in the field of machine translation. | IWSLT2015_English-German => 0.0
+The IQN method achieves the highest Score score on the dataset of 57 Atari 2600 games in the ALE (Arcade Learning Environment). | Atari_2600_Atlantis => 0.0
+The VAT_EntMin method for semi-supervised image classification is evaluated on the MNIST, SVHN, and CIFAR-10 datasets. | CIFAR-10__4000_Labels => 0.0
+The iBOWIMG_baseline method achieves the highest Percentage_correct score on the COCO VQA dataset for the Visual Question Answering task. | COCO_Visual_Question_Answering__VQA__real_images_1_0_multiple_choice => 0.5
+The DeepMatching method is evaluated on the HPatches dataset for Dense Pixel Correspondence Estimation using a metric based on the number of correctly matched pixels compared to the overall number of pixels. This is referred to as 'accuracy@', where a pixel is considered correct if its match in the second image is closer than a certain threshold to the ground truth. | Viewpoint_I_AEPE, Viewpoint_II_AEPE, Viewpoint_III_AEPE, Viewpoint_IV_AEPE, Viewpoint_V_AEPE => 0.0
+The 300D_NTI-SLSTM-LSTM_encoders method for Natural Language Inference is evaluated on the Stanford Natural Language Inference (SNLI) dataset and the MultiNLI dataset. | SNLI => 0.5
+The highest Recall_50 score for the Collaborative Filtering task on the Million Song Dataset is not explicitly mentioned in the available resources. The available information primarily discusses other metrics like MAP@500 and NDCG@100. Further specific research or access to detailed competition results might be required to find the Recall_50 score. | Mult-VAE_PR => 0.0
+The Stacked Hourglass Networks achieve state-of-the-art results on the FLIC and MPII benchmarks for human pose estimation, but specific PCK_0_2 scores are not detailed in the retrieved documents. | FLIC_Elbows => 0.0
+The Inception_V2 method is evaluated on the ImageNet dataset for the Image Classification task using top-1 and top-5 error rates. These metrics are standard for assessing the performance of models on the ILSVRC 2012 classification dataset. | Top_1_Accuracy, Top_5_Accuracy => 1.0
+The DQN_hs method evaluation on Atari Games datasets is not explicitly documented in the available resources. The search did not yield specific datasets used for DQN_hs evaluation. It might be beneficial to check specific research papers or datasets related to DQN methods in Atari Games for more detailed information. | Atari_2600_Chopper_Command => 0.0
+The specific evaluation metrics for the Ann_PAT_MT method on the CoNLL-2014_A2 dataset for Grammatical Error Detection were not found in the available resources. It is recommended to consult the original paper or related publications for detailed information. | F0_5 => 0.0
+The CyCADA method is evaluated on the SYNTHIA Fall-to-Winter dataset for the Image-to-Image Translation task using semantic segmentation metrics. However, specific evaluation metrics such as accuracy, precision, recall, or F1-score were not explicitly found in the search results. | Per-pixel_Accuracy, fwIOU, mIoU => 0.0
+Unable to find specific dataset information for the DDQN__tuned__noop method achieving the highest Score score for the Atari_Games task. Further detailed search or specific dataset reference needed. | Atari_2600_Video_Pinball => 0.0
+The DQN_noop method is evaluated on the Atari 2600 suite, which includes a variety of games such as Montezuma's Revenge, Pong, Seaquest, and others. The evaluation often involves using different start conditions like noop starts and human starts to assess performance across these games. | Atari_2600_River_Raid => 0.0
+Processing examples:  10%|█         | 6/60 [03:14<27:22, 30.41s/it]Processing examples:  13%|█▎        | 8/60 [03:18<16:34, 19.12s/it]Processing examples:  80%|████████  | 48/60 [04:08<00:32,  2.67s/it]Processing examples: 100%|██████████| 60/60 [04:08<00:00,  4.14s/it]
+The SRCNN method for Video Super-Resolution is evaluated on datasets such as the Xiph and the Ultra Video Group database. | Vid4_-_4x_upscaling => 0.0
+The Paragraph Vector method has been evaluated on several datasets for the Question Answering task, including SQuAD, SelQA, WikiQA, NewWikiQA, and InforBoxQA. | WikiQA => 0.5
+The Impatient_Reader method is evaluated on the CNN/Daily Mail dataset for the Question Answering task using metrics such as accuracy and F1 score, although specific metrics for this method were not found in the search results. | CNN, Daily_Mail => 0.5
+The SVDCNN method's highest error score for the Sentiment Analysis task on a specific dataset could not be determined from the available resources. Further specific research or access to detailed experimental results may be required. | Yelp_Fine-grained_classification => 0.0
+The current state-of-the-art on the SNLI dataset for Natural Language Inference is achieved by Neural Tree Indexers for Text Understanding, with an accuracy of 86.1%. However, specific details about the highest Parameters score are not available from the current search results. | 300D_Residual_stacked_encoders => 0.0
+The DRCN method for Image Super-Resolution on the Set5 dataset with 4x upscaling is typically evaluated using the PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index) metrics. | MOS, PSNR, SSIM => 0.67
+
+Batch Evaluation Metrics Report
+==============================
+Total Execution Time: 481.58 seconds
+Average Time per Batch: 240.79 seconds
+Best Score: 0.228 (Batch 1)
+Total Tokens: 515,011 (3,284 in, 511,727 out)
+Total Cost: $5.1255
+
+Per-Batch Performance:
+--------------------
+
+Batch 1:
+  Score: 0.228
+  Execution Time: 227.33s
+  Tokens: 261,608 (1,642 in, 259,966 out)
+  Cost: $2.6038
+
+Batch 2:
+  Score: 0.211
+  Execution Time: 254.25s
+  Tokens: 253,403 (1,642 in, 251,761 out)
+  Cost: $2.5217
+Results saved to experiment_results/iterations_study_20241204_221809/iter_4/results.json

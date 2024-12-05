@@ -1,0 +1,40 @@
+{
+  "strategies": {
+    "iterative_evolution": {
+      "performance": 0.23616666666666666,
+      "execution_time": 184.78828287124634,
+      "cost": 1.2411349999999999,
+      "optimization_cost": 0.96426,
+      "optimization_time": 93.58658862113953,
+      "iteration_details": [
+        {
+          "iteration": 0,
+          "score": 0.2375,
+          "total_iteration_time": 93.58655714988708,
+          "comparator_metrics": {
+            "tokens_in": 29993,
+            "tokens_out": 471,
+            "execution_time": 11.927696704864502
+          },
+          "feedback_metrics": {
+            "tokens_in": 619,
+            "tokens_out": 294,
+            "execution_time": 5.103286027908325
+          },
+          "instruction": "New Instruction: You will be given `Tools`, which will be a list of tools to use to accomplish the `Goal`. Your task is to decide which tool to use and what input values to provide based on the user query. To enhance performance, especially on negative inputs, implement a feedback loop where the initial results from a tool are used to refine the query for subsequent searches. This iterative process will help narrow down the search to more relevant results. Ensure that your `Action` includes a tool to use and the input query to pass to the tool. You can opt to use no tools and provide the final answer directly, or use one tool multiple times with different input queries if applicable.\n\nDevelop a decision-making framework for selecting tools based on the type of query. For instance, use RETRIEVE for specific dataset-related queries and WEB_SEARCH for broader, context-based queries. Encourage the use of multiple tools in sequence to gather comprehensive information. Start with a broad search using WEB_SEARCH and then use RETRIEVE for more detailed information. This approach will help in cross-verifying information and ensuring that the results are accurate and complete.\n\nProvide training or guidelines on how to structure queries effectively to align with the capabilities of the tools. Ensure that the queries are specific and clear, as this will allow the tools to retrieve relevant and precise information. By implementing these strategies, you can improve the consistency of tool selection and the accuracy of results, particularly for negative inputs."
+        }
+      ],
+      "status": "success"
+    },
+    "mixed": {
+      "performance": 0.23333333333333334,
+      "execution_time": 240.23651432991028,
+      "cost": 3.03589,
+      "optimization_cost": 1.07745,
+      "optimization_time": 94.82085490226746,
+      "best_batch_score": 0.23333333333333334,
+      "status": "success"
+    }
+  },
+  "timestamp": "20241204-220142"
+}

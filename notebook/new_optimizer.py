@@ -269,27 +269,35 @@ class AvatarOptimizerWithMetrics(Teleprompter):
 
     def process_example(self, actor, example, return_outputs):
         actor = deepcopy(actor)
-
+        
         try:
+            # Convert example to string to count input tokens
+            example_str = str(example.inputs().toDict())
+            input_tokens = self._count_tokens(example_str)
+            
+            # Get prediction and count output tokens
             prediction = actor(**example.inputs().toDict())
+            output_tokens = self._count_tokens(str(prediction))
+            
             score = self.metric(example, prediction)
 
             if return_outputs:
-                return example, prediction, score
+                return example, prediction, score, input_tokens, output_tokens
             else:
-                return score
+                return score, input_tokens, output_tokens
 
         except Exception as e:
             print(e)
-            
             if return_outputs:
-                return example, None, 0
+                return example, None, 0, 0, 0
             else:
-                return 0
+                return 0, 0, 0
 
 
     def thread_safe_evaluator(self, devset, actor, return_outputs=False, num_threads=60):
         total_score = 0
+        total_tokens_in = 0
+        total_tokens_out = 0
         total_examples = len(devset)
         results = []
 
@@ -301,11 +309,16 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             for future in tqdm(futures, total=total_examples, desc="Processing examples"):
                 result = future.result()
                 if return_outputs:
-                    example, prediction, score = result
+                    example, prediction, score, input_tokens, output_tokens = result
                     total_score += score
+                    total_tokens_in += input_tokens
+                    total_tokens_out += output_tokens
                     results.append((example, prediction, score))
                 else:
-                    total_score += result
+                    score, input_tokens, output_tokens = result
+                    total_score += score
+                    total_tokens_in += input_tokens
+                    total_tokens_out += output_tokens
         
         eval_time = time.time() - eval_start_time
         self.optimization_metrics['evaluation_time'] += eval_time
@@ -313,45 +326,126 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         
         avg_metric = total_score / total_examples
         
+        # Calculate cost
+        total_cost = total_tokens_in / 1000000 * 2.5 + total_tokens_out / 1000000 * 10.0
+
+        # Create evaluation metrics
+        evaluation_metrics = {
+            'execution_time': eval_time,
+            'total_tokens_in': total_tokens_in,
+            'total_tokens_out': total_tokens_out,
+            'total_cost': total_cost,
+            'average_score': avg_metric
+        }
+
+        # Print evaluation report
+        self._print_evaluation_report(evaluation_metrics)
+        
         if return_outputs:
-            return avg_metric, results
+            return avg_metric, results, evaluation_metrics
         else:
-            return avg_metric
+            return avg_metric, evaluation_metrics
+
+    def _print_evaluation_report(self, metrics):
+        """Print a detailed report of a single evaluation run"""
+        print("\nEvaluation Metrics Report")
+        print("========================")
+        print(f"Execution Time: {metrics['execution_time']:.2f} seconds")
+        print(f"Total Tokens: {metrics['total_tokens_in'] + metrics['total_tokens_out']:,} "
+            f"({metrics['total_tokens_in']:,} in, {metrics['total_tokens_out']:,} out)")
+        print(f"Total Cost: ${metrics['total_cost']:.4f}")
+        print(f"Average Score: {metrics['average_score']:.3f}")
 
     def thread_safe_evaluator_batch(self, devset, actor, batch_num, return_outputs=False, num_threads=60):
         total_examples = len(devset)
         results = []
         max_score = 0
-
-        eval_start_time = time.time()
+        
+        batch_metrics = {
+            'batches': [],
+            'total_execution_time': 0,
+            'total_tokens_in': 0,
+            'total_tokens_out': 0,
+            'best_batch': None,
+            'total_cost': 0
+        }
         
         for batch_idx in range(batch_num):
-            print(f"Processing batch {batch_idx + 1} of {batch_num}...", end="\n")
+            batch_start_time = time.time()
+            print(f"Processing batch {batch_idx + 1} of {batch_num}...")
             total_score = 0
+            batch_tokens_in = 0
+            batch_tokens_out = 0
+            
             with ThreadPoolExecutor(max_workers=num_threads) as executor:
                 futures = [executor.submit(self.process_example, actor, example, return_outputs) for example in devset]
                 
                 for future in tqdm(futures, total=total_examples, desc="Processing examples"):
                     result = future.result()
                     if return_outputs:
-                        example, prediction, score = result
+                        example, prediction, score, input_tokens, output_tokens = result
                         total_score += score
-                        results.append((example, prediction, score))
+                        batch_tokens_in += input_tokens
+                        batch_tokens_out += output_tokens
                     else:
-                        total_score += result
-        
+                        score, input_tokens, output_tokens = result
+                        total_score += score
+                        batch_tokens_in += input_tokens
+                        batch_tokens_out += output_tokens
+            
             avg_metric = total_score / total_examples
-            if(max_score < avg_metric):
+            batch_time = time.time() - batch_start_time
+            batch_cost = (batch_tokens_in * 2.5 + batch_tokens_out * 10.0) / 1000000
+
+            # Store batch metrics
+            batch_metrics['batches'].append({
+                'batch_id': batch_idx + 1,
+                'score': avg_metric,
+                'execution_time': batch_time,
+                'tokens_in': batch_tokens_in,
+                'tokens_out': batch_tokens_out,
+                'cost': batch_cost
+            })
+            
+            # Update totals
+            batch_metrics['total_execution_time'] += batch_time
+            batch_metrics['total_tokens_in'] += batch_tokens_in
+            batch_metrics['total_tokens_out'] += batch_tokens_out
+            batch_metrics['total_cost'] += batch_cost
+
+            if max_score < avg_metric:
                 max_score = avg_metric
+                batch_metrics['best_batch'] = batch_idx + 1
         
-        eval_time = time.time() - eval_start_time
-        self.optimization_metrics['evaluation_time'] += eval_time
-        self.optimization_metrics['total_execution_time'] += eval_time
+        batch_metrics['final_score'] = max_score
+        batch_metrics['average_batch_time'] = batch_metrics['total_execution_time'] / batch_num
+        
+        self._print_batch_evaluation_report(batch_metrics)
         
         if return_outputs:
-            return max_score, results
+            return max_score, results, batch_metrics
         else:
-            return max_score
+            return max_score, batch_metrics
+
+    def _print_batch_evaluation_report(self, metrics):
+        print("\nBatch Evaluation Metrics Report")
+        print("==============================")
+        print(f"Total Execution Time: {metrics['total_execution_time']:.2f} seconds")
+        print(f"Average Time per Batch: {metrics['average_batch_time']:.2f} seconds")
+        print(f"Best Score: {metrics['final_score']:.3f} (Batch {metrics['best_batch']})")
+        print(f"Total Tokens: {metrics['total_tokens_in'] + metrics['total_tokens_out']:,} "
+            f"({metrics['total_tokens_in']:,} in, {metrics['total_tokens_out']:,} out)")
+        print(f"Total Cost: ${metrics['total_cost']:.4f}")
+        
+        print("\nPer-Batch Performance:")
+        print("--------------------")
+        for batch in metrics['batches']:
+            print(f"\nBatch {batch['batch_id']}:")
+            print(f"  Score: {batch['score']:.3f}")
+            print(f"  Execution Time: {batch['execution_time']:.2f}s")
+            print(f"  Tokens: {batch['tokens_in'] + batch['tokens_out']:,} "
+                f"({batch['tokens_in']:,} in, {batch['tokens_out']:,} out)")
+            print(f"  Cost: ${batch['cost']:.4f}")
 
     def _get_pos_neg_results(
         self, 
@@ -361,8 +455,10 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         pos_inputs = []
         neg_inputs = []
         
-        avg_score, results = self.thread_safe_evaluator(trainset, actor, return_outputs=True)
+        # Update to handle the third return value (metrics)
+        avg_score, results, eval_metrics = self.thread_safe_evaluator(trainset, actor, return_outputs=True)
         print(f"Average Score: {avg_score}")
+        print(f"Evaluation Cost: ${eval_metrics['total_cost']:.4f}")
 
         for example, prediction, score in results:
             if score >= self.upper_bound:

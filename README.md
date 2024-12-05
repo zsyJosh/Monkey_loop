@@ -78,6 +78,18 @@ Then download and inflate the dataset [data.zip](https://drive.google.com/file/d
 
 To modify the iterative optimization loop, please edit the [new_optimizer](https://github.com/zsyJosh/Monkey_loop/blob/main/notebook/new_optimizer.py).
 
+To get the json results of efficiency/cost estimation, navigate to `/notebook`, then 
+```
+# Run all strategies
+python evaluate.py --output results/all_strategies.json
+
+# Run specific strategies
+python evaluate.py --strategies one_shot batch_sampling --output results/one_shot_batch.json
+
+# Configure batch size and iterations
+python evaluate.py --strategies mixed --batch-size 3 --max-iters 2 --output results/mixed_3_2.json
+```
+
 
 ## 2. (To reproduce the results) Run AvaTaR on STaRK and Flickr-30kEntities
 ### Installation

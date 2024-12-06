@@ -1,0 +1,26 @@
+{
+  "strategies": {
+    "batch_sampling": {
+      "performance": 0.26116666666666666,
+      "execution_time": 1324.443472146988,
+      "cost": 9.69466,
+      "best_batch_score": 0.26116666666666666,
+      "status": "success"
+    },
+    "mixed": {
+      "performance": 0.2861666666666667,
+      "execution_time": 10420.96742606163,
+      "cost": 4.4705325,
+      "optimization_cost": 1.04022,
+      "optimization_time": 105.36360001564026,
+      "best_batch_score": 0.2861666666666667,
+      "status": "success"
+    }
+  },
+  "timestamp": "20241205-145654",
+  "config": {
+    "max_iters": 1,
+    "batch_size": 10,
+    "experiment_name": "batch_study_10"
+  }
+}

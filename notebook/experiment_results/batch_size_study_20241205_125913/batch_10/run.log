@@ -1157,22 +1157,3 @@ The 300D_NTI-SLSTM-LSTM_encoders method is evaluated on the SNLI (Stanford Natur
 Processing batch 7 of 10...
 400 Client Error: Bad Request for url: https://google.serper.dev/search?q=Discriminative+Unsupervised+Feature+Learning+with+Convolutional+Neural+Networks+Image+Classification+datasets+evaluation&gl=us&hl=en&num=10
 Processing examples:   0%|          | 0/60 [00:00<?, ?it/s]400 Client Error: Bad Request for url: https://google.serper.dev/search?q=Discriminative+Unsupervised+Feature+Learning+with+Convolutional+Neural+Networks+Image+Classification+datasets+evaluation&gl=us&hl=en&num=10
-Processing examples:   2%|▏         | 1/60 [02:06<2:04:13, 126.33s/it]400 Client Error: Bad Request for url: https://google.serper.dev/search?q=highest+Mean_IoU+score+CamVid+dataset+Semantic+Segmentation&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=highest+Train_Accuracy+score+SNLI+dataset+Natural+Language+Inference&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=ConvNet+evaluation+metrics+Pascal3D+dataset+Keypoint+Detection&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=highest+Score+on+Atari_2600_Name_This_Game+dataset+for+Atari_Games+task&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=Stacked+Hourglass+Networks+highest+PCK_0_2+score+dataset+Pose+Estimation&gl=us&hl=en&num=10
-The TuckER method is evaluated on four standard link prediction datasets: FB15k, FB15k-237, WN18, and WN18RR. | FB15k-237 => 0.5
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=Bootstrapped+DQN+evaluation+datasets+Atari+Games+list&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=DQN_hs+method+evaluation+datasets+for+Atari_Games+task&gl=us&hl=en&num=10
-The IDE____CamStyle___Random_Erasing method is evaluated on the Market-1501, DukeMTMC-reID, and CUHK03 datasets for the Person Re-Identification task. | Market-1501 => 0.5
-The S-Norm method is evaluated on the TREC QA dataset, SQuAD, and TriviaQA for the Question_Answering task. | TriviaQA => 0.0
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=IQN+method+highest+Score+score+Atari_Games+dataset&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=Impatient_Reader+method+evaluation+metrics+CNN+Daily+Mail+dataset+Question+Answering&gl=us&hl=en&num=10
-The DeepMatching method is evaluated on the HPatches dataset for Dense Pixel Correspondence Estimation using the metric 'accuracy@', which measures the proportion of correctly matched pixels compared to the total number of pixels. A pixel is considered correct if its match in the second image is closer than a specified threshold to the ground truth. | Viewpoint_I_AEPE, Viewpoint_II_AEPE, Viewpoint_III_AEPE, Viewpoint_IV_AEPE, Viewpoint_V_AEPE => 0.0
-The ACF-WIDER method achieves the highest AP score on the AFW dataset for the Face Detection task. | WIDER_Face__Easy_ => 0.0
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=Cora+dataset+highest+accuracy+node+classification+method&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=SVDCNN+highest+Error+score+dataset+Sentiment+Analysis&gl=us&hl=en&num=10
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=U-Net+Skin+Cancer+Segmentation+datasets+evaluation&gl=us&hl=en&num=10
-The Transformer method is evaluated on the WMT 2014 English-to-German and English-to-French translation tasks for the Machine Translation task. | IWSLT2015_English-German => 0.0
-400 Client Error: Bad Request for url: https://google.serper.dev/search?q=highest+Parameters+score+on+SNLI+dataset+for+Natural+Language+Inference+task&gl=us&hl=en&num=10

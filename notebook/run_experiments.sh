@@ -25,7 +25,7 @@ run_experiment() {
     python evaluate.py \
         --strategies $strategies \
         --max-iters $iters \
-        --batch-size 2 \
+        --batch-size 4 \
         --output "${output_dir}/results.json" \
         --experiment-name "iteration_study_${iters}" \
         2>&1 | tee -a "${output_dir}/run.log"
@@ -38,7 +38,7 @@ echo "Starting iteration parameter study at $(date)" > $LOG_FILE
 echo "Results will be saved in: $EXPERIMENT_DIR" | tee -a $LOG_FILE
 
 # Run experiments for different iteration numbers
-for iters in 1 2 3 4; do
+for iters in 3 4; do
     run_experiment $iters "iterative_evolution mixed"
 done
 

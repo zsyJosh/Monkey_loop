@@ -324,14 +324,20 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         self.optimization_metrics['evaluation_time'] += eval_time
         self.optimization_metrics['total_execution_time'] += eval_time
         
-        avg_metric = total_score / total_examples
+        # Get the lowest score from any batched runs if they exist
+        if hasattr(self, '_latest_batch_scores'):
+            avg_metric = min(self._latest_batch_scores)
+            # Clean up after using
+            delattr(self, '_latest_batch_scores')
+        else:
+            avg_metric = total_score / total_examples
         
         # Calculate cost
         total_cost = total_tokens_in / 1000000 * 2.5 + total_tokens_out / 1000000 * 10.0
 
         # Create evaluation metrics
         evaluation_metrics = {
-            'execution_time': eval_time,
+            'evaluation_time': eval_time,
             'total_tokens_in': total_tokens_in,
             'total_tokens_out': total_tokens_out,
             'total_cost': total_cost,
@@ -350,7 +356,7 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         """Print a detailed report of a single evaluation run"""
         print("\nEvaluation Metrics Report")
         print("========================")
-        print(f"Execution Time: {metrics['execution_time']:.2f} seconds")
+        print(f"Execution Time: {metrics['evaluation_time']:.2f} seconds")
         print(f"Total Tokens: {metrics['total_tokens_in'] + metrics['total_tokens_out']:,} "
             f"({metrics['total_tokens_in']:,} in, {metrics['total_tokens_out']:,} out)")
         print(f"Total Cost: ${metrics['total_cost']:.4f}")
@@ -360,6 +366,7 @@ class AvatarOptimizerWithMetrics(Teleprompter):
         total_examples = len(devset)
         results = []
         max_score = 0
+        all_batch_scores = []  # Keep track of all scores
         
         batch_metrics = {
             'batches': [],
@@ -394,6 +401,7 @@ class AvatarOptimizerWithMetrics(Teleprompter):
                         batch_tokens_out += output_tokens
             
             avg_metric = total_score / total_examples
+            all_batch_scores.append(avg_metric)  # Store each batch's score
             batch_time = time.time() - batch_start_time
             batch_cost = (batch_tokens_in * 2.5 + batch_tokens_out * 10.0) / 1000000
 
@@ -416,6 +424,9 @@ class AvatarOptimizerWithMetrics(Teleprompter):
             if max_score < avg_metric:
                 max_score = avg_metric
                 batch_metrics['best_batch'] = batch_idx + 1
+        
+        # Store all scores for the naive evaluator to use
+        self._latest_batch_scores = all_batch_scores
         
         batch_metrics['final_score'] = max_score
         batch_metrics['average_batch_time'] = batch_metrics['total_execution_time'] / batch_num

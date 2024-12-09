@@ -1,0 +1,23 @@
+{
+  "strategies": {
+    "batch_sampling": {
+      "performance": 0.26116666666666666,
+      "execution_time": 481.1329278945923,
+      "cost": 3.88624,
+      "best_batch_score": 0.26116666666666666,
+      "status": "success"
+    },
+    "one_shot": {
+      "performance": 0.23333333333333334,
+      "execution_time": 129.75520062446594,
+      "cost": 0.964225,
+      "status": "success"
+    }
+  },
+  "timestamp": "20241207-215720",
+  "config": {
+    "max_iters": 1,
+    "batch_size": 4,
+    "experiment_name": ""
+  }
+}

@@ -39,7 +39,6 @@ from new_optimizer import AvatarOptimizerWithMetrics
 
 OPENAI_API_KEY = ''
 SERPER_API_KEY = ''
-
 # add environment variables
 
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
@@ -176,30 +175,20 @@ class APICallMetrics:
 
 @dataclass
 class AvatarMetrics:
-    total_calls: int = 0
     total_tokens_in: int = 0
     total_tokens_out: int = 0
     total_execution_time: float = 0.0
-    calls_by_tool: Dict[str, int] = field(default_factory=dict)
-    api_call_history: List[APICallMetrics] = field(default_factory=list)
     
     def add_call(self, metrics: APICallMetrics):
-        self.total_calls += 1
         self.total_tokens_in += metrics.tokens_in
         self.total_tokens_out += metrics.tokens_out
         self.total_execution_time += metrics.execution_time
-        self.calls_by_tool[metrics.tool_name] = self.calls_by_tool.get(metrics.tool_name, 0) + 1
-        self.api_call_history.append(metrics)
     
     def merge(self, other: 'AvatarMetrics'):
         """Merge another AvatarMetrics instance into this one"""
-        self.total_calls += other.total_calls
         self.total_tokens_in += other.total_tokens_in
         self.total_tokens_out += other.total_tokens_out
         self.total_execution_time += other.total_execution_time
-        for tool, count in other.calls_by_tool.items():
-            self.calls_by_tool[tool] = self.calls_by_tool.get(tool, 0) + count
-        self.api_call_history.extend(other.api_call_history)
 
     def estimate_cost(self, model_name: str = "gpt-4") -> float:
         pricing = {
@@ -290,12 +279,8 @@ def multi_thread_executor(test_set, signature, num_threads=60):
             score, metrics = future.result()
             total_score += score
             # Only combine token counts and call counts, not execution times
-            combined_metrics.total_calls += metrics.total_calls
             combined_metrics.total_tokens_in += metrics.total_tokens_in
             combined_metrics.total_tokens_out += metrics.total_tokens_out
-            for tool, count in metrics.calls_by_tool.items():
-                combined_metrics.calls_by_tool[tool] = combined_metrics.calls_by_tool.get(tool, 0) + count
-            combined_metrics.api_call_history.extend(metrics.api_call_history)
     
     total_execution_time = time.time() - start_time
     combined_metrics.total_execution_time = total_execution_time
@@ -314,9 +299,7 @@ def single_thread_executor(test_set, signature):
             prediction = avatar(**example.inputs().toDict())
             score = metric(example, prediction)
             total_score += score
-            # Combine metrics from this run
-            for call in avatar.metrics.api_call_history:
-                combined_metrics.add_call(call)
+
         except Exception as e:
             print(e)
 
@@ -327,21 +310,12 @@ def format_metrics_report(metrics: AvatarMetrics, model_name: str = "gpt-4") -> 
     cost = metrics.estimate_cost(model_name)
     
     report = f"""
-Avatar Execution Metrics Report
-==============================
-Execution Time: {metrics.total_execution_time:.2f} seconds
-Total API Calls: {metrics.total_calls}
-Total Tokens: {metrics.total_tokens_in + metrics.total_tokens_out:,} ({metrics.total_tokens_in:,} in, {metrics.total_tokens_out:,} out)
-Estimated Cost: ${cost:.4f}
-
-Average Time per Call: {metrics.total_execution_time / metrics.total_calls:.2f} seconds
-
-Tool Usage Breakdown:
--------------------
-"""
-    for tool, count in sorted(metrics.calls_by_tool.items()):
-        report += f"{tool}: {count} calls\n"
-
+    Avatar Execution Metrics Report
+    ==============================
+    Execution Time: {metrics.total_execution_time:.2f} seconds
+    Total Tokens: {metrics.total_tokens_in + metrics.total_tokens_out:,} ({metrics.total_tokens_in:,} in, {metrics.total_tokens_out:,} out)
+    Estimated Cost: ${cost:.4f}
+    """
     return report
 
 
@@ -356,15 +330,62 @@ class ExperimentRunner:
             "timestamp": time.strftime("%Y%m%d-%H%M%S"),
             "config": experiment_config
         }
+        # Cache for optimized agents and metrics
+        self.optimization_cache = {}
+
+    def _get_or_create_optimization(self, max_iters, strategy_key):
+        """Helper method to get or create optimization results with caching"""
+        cache_key = f"{strategy_key}_{max_iters}"
+        
+        if cache_key not in self.optimization_cache:
+            # Create optimizer with specified parameters
+            optimizer = AvatarOptimizerWithMetrics(
+                metric=metric,
+                max_iters=max_iters,
+                max_negative_inputs=10,
+                max_positive_inputs=10,
+                lower_bound=0.5,
+                upper_bound=0.5
+            )
+
+            actor_agent = Avatar(
+                tools=tools,
+                signature=ToolQASignature,
+                verbose=False,
+                max_iters=max_iters
+            )
+            # Run compilation
+            result = optimizer.compile(
+                student=actor_agent,
+                trainset=self.toolqa_train
+            )
+            
+            # Cache the results
+            self.optimization_cache[cache_key] = {
+                "agent": result["agent"],
+                "metrics": result["metrics"],
+                "optimizer": optimizer
+            }
+        
+        return self.optimization_cache[cache_key]
 
     def run_one_shot(self) -> Dict[str, Any]:
         """Run one-shot generation strategy"""
         try:
-            score, metrics = multi_thread_executor(self.toolqa_test, ToolQASignature)
+            # Get or create optimization with 0 iterations
+            opt_results = self._get_or_create_optimization(0, "one_shot")
+            optimized_agent = opt_results["agent"]
+            optimizer = opt_results["optimizer"]
+            
+            score, eval_metrics = optimizer.thread_safe_evaluator(
+                self.toolqa_test, 
+                optimized_agent
+            )
+            
             return {
                 "performance": score,
-                "execution_time": metrics.total_execution_time,
-                "cost": metrics.estimate_cost(),
+                "execution_time": eval_metrics['evaluation_time'],
+                "cost": eval_metrics['total_cost'],
                 "status": "success"
             }
         except Exception as e:
@@ -373,26 +394,20 @@ class ExperimentRunner:
                 "error": str(e)
             }
 
-    def run_batch_sampling(self, batch_num: int = 2) -> Dict[str, Any]:
-        """Run batch sampling strategy"""
+    def run_batch_sampling(self, batch_num: int = 4) -> Dict[str, Any]:
+        """Run batch sampling strategy using the same optimization as one-shot"""
         try:
-            batch_sampling_monkey = AvatarOptimizerWithMetrics(
-                metric=metric,
-                max_iters=0,
-                max_negative_inputs=10,
-                max_positive_inputs=10,
-                lower_bound=0.5,
-                upper_bound=0.5
-            )
-            result = batch_sampling_monkey.compile(
-                student=self.actor_agent,
-                trainset=self.toolqa_train
-            )
-            score, batch_metrics = batch_sampling_monkey.thread_safe_evaluator_batch(
+            # Use the same optimization as one-shot
+            opt_results = self._get_or_create_optimization(0, "one_shot")
+            optimized_agent = opt_results["agent"]
+            optimizer = opt_results["optimizer"]
+            
+            score, batch_metrics = optimizer.thread_safe_evaluator_batch(
                 self.toolqa_test, 
-                result['agent'], 
+                optimized_agent, 
                 batch_num
             )
+            
             return {
                 "performance": score,
                 "execution_time": batch_metrics['total_execution_time'],
@@ -409,29 +424,21 @@ class ExperimentRunner:
     def run_iterative_evolution(self, max_iters: int = 1) -> Dict[str, Any]:
         """Run iterative evolution strategy"""
         try:
-            iterative_monkey = AvatarOptimizerWithMetrics(
-                metric=metric,
-                max_iters=max_iters,
-                max_negative_inputs=10,
-                max_positive_inputs=10,
-                lower_bound=0.5,
-                upper_bound=0.5
-            )
-            result = iterative_monkey.compile(
-                student=self.actor_agent,
-                trainset=self.toolqa_train
-            )
-            optimized_actor = result["agent"]
-            optimization_metrics = result["metrics"]
+            # Get or create optimization with specified iterations
+            opt_results = self._get_or_create_optimization(max_iters, "iterative")
+            optimized_agent = opt_results["agent"]
+            optimizer = opt_results["optimizer"]
+            optimization_metrics = opt_results["metrics"]
             
-            score, eval_metrics = iterative_monkey.thread_safe_evaluator(
+            score, eval_metrics = optimizer.thread_safe_evaluator(
                 self.toolqa_test, 
-                optimized_actor
+                optimized_agent
             )
             
             return {
                 "performance": score,
-                "execution_time": eval_metrics['execution_time'],
+                "evaluation_time": eval_metrics['evaluation_time'],
+                "execution_time": eval_metrics['evaluation_time'] + optimization_metrics['total_execution_time'],
                 "cost": eval_metrics['total_cost'],
                 "optimization_cost": optimization_metrics['total_cost'],
                 "optimization_time": optimization_metrics['total_execution_time'],
@@ -445,28 +452,17 @@ class ExperimentRunner:
             }
 
     def run_mixed_strategy(self, max_iters: int = 1, batch_num: int = 2) -> Dict[str, Any]:
-        """Run mixed strategy (iterative evolution + batch evaluation)"""
+        """Run mixed strategy using the same optimization as iterative evolution"""
         try:
-            # First run iterative evolution to get optimized agent
-            iterative_monkey = AvatarOptimizerWithMetrics(
-                metric=metric,
-                max_iters=max_iters,
-                max_negative_inputs=10,
-                max_positive_inputs=10,
-                lower_bound=0.5,
-                upper_bound=0.5
-            )
-            result = iterative_monkey.compile(
-                student=self.actor_agent,
-                trainset=self.toolqa_train
-            )
-            optimized_actor = result["agent"]
-            optimization_metrics = result["metrics"]
+            # Use the same optimization as iterative evolution
+            opt_results = self._get_or_create_optimization(max_iters, "iterative")
+            optimized_agent = opt_results["agent"]
+            optimizer = opt_results["optimizer"]
+            optimization_metrics = opt_results["metrics"]
             
-            # Then do batch evaluation
-            score, batch_metrics = iterative_monkey.thread_safe_evaluator_batch(
+            score, batch_metrics = optimizer.thread_safe_evaluator_batch(
                 self.toolqa_test, 
-                optimized_actor,
+                optimized_agent,
                 batch_num
             )
             
@@ -494,21 +490,22 @@ class ExperimentRunner:
         batch_size = self.experiment_config.get('batch_size', 2)
         
         for strategy in strategies:
-            if strategy == 'one_shot':
-                self.results['strategies']['one_shot'] = self.run_one_shot()
-            elif strategy == 'batch_sampling':
+            if strategy == 'batch_sampling':
                 self.results['strategies']['batch_sampling'] = self.run_batch_sampling(batch_size)
-            elif strategy == 'iterative_evolution':
-                self.results['strategies']['iterative_evolution'] = self.run_iterative_evolution(max_iters)
+            elif strategy == 'one_shot':
+                self.results['strategies']['one_shot'] = self.run_one_shot()
             elif strategy == 'mixed':
                 self.results['strategies']['mixed'] = self.run_mixed_strategy(max_iters, batch_size)
-        
+            elif strategy == 'iterative_evolution':
+                self.results['strategies']['iterative_evolution'] = self.run_iterative_evolution(max_iters)
+            
         return self.results
 
     def save_results(self, output_path: str):
         """Save results to a JSON file"""
         with open(output_path, 'w') as f:
             json.dump(self.results, f, indent=2)
+
 
 def sentence_embedding(model, texts):
     embeddings = model.encode(texts)
@@ -596,7 +593,7 @@ def main():
                       help='Strategies to run')
     parser.add_argument('--output', type=str, default='results.json',
                       help='Output JSON file path')
-    parser.add_argument('--batch-size', type=int, default=2,
+    parser.add_argument('--batch-size', type=int, default=4,
                       help='Batch size for batch sampling and mixed strategies')
     parser.add_argument('--max-iters', type=int, default=1,
                       help='Maximum iterations for iterative evolution')
